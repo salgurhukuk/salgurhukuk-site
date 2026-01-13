@@ -1,0 +1,16 @@
+User-agent: *
+Allow: /
+Allow: /makaleler/
+Allow: /images/
+
+# Daha önce hata aldığınız ve FTP listenizde artık olmayan eski sayfaları engelliyoruz
+# Bu, Google'ın boşuna 404 sayfalarını tarayıp sitenizi yavaşlatmasını önler
+Disallow: /aile-hukuku.html
+Disallow: /service.html
+Disallow: /team.html
+Disallow: /blog.html
+Disallow: /single.html
+Disallow: /kvkk-aydinlatma.html
+
+# Site Haritası Yolunuz (GSC'nin dosyayı okumasını kolaylaştırır)
+Sitemap: https://salgurhukuk.com/sitemap.xml
