@@ -1,3 +1,236 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<title>Salgür Hukuk & Danışmanlık | Uşak Avukat</title>
+<meta name="description" content="Salgür Hukuk & Danışmanlık; Uşak Merkez, Sivaslı ve Karahallı ilçelerinde boşanma, ceza ve iş hukuku alanlarında avukatlık hizmeti sunmaktadır.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LegalService",
+  "name": "Salgür Hukuk & Danışmanlık",
+  "image": "https://salgurhukuk.com/assets/ofis.jpg",
+  "url": "https://salgurhukuk.com/",
+  "telephone": "+90 5XX XXX XX XX",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Fevzi Çakmak Mah.İlay Sok. No:4/13 Merkez/Uşak",
+    "addressLocality": "Uşak",
+    "addressRegion": "Uşak",
+    "postalCode": "64000",
+    "addressCountry": "TR"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.6695139,
+    "longitude": 29.4122274
+  },
+  "openingHours": "Mo-Fr 09:00-18:00",
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "name": "Uşak"
+  },
+  "sameAs": [
+    "https://www.google.com/maps?cid=4a8c22f50a0c127"
+  ],
+  "review": [
+    {
+      "@type": "Review",
+      "reviewBody": "Boşanma sürecinde tüm aşamalar açık ve anlaşılır şekilde anlatıldı. Hukuki destek süreci güven vericiydi.",
+      "author": { "@type": "Person", "name": "Müvekkil" }
+    },
+    {
+      "@type": "Review",
+      "reviewBody": "Ceza dosyasıyla ilgili süreç profesyonelce yürütüldü ve düzenli bilgilendirme yapıldı.",
+      "author": { "@type": "Person", "name": "Müvekkil" }
+    }
+  ]
+}
+</script>
+
+<style>
+/* --- Genel Ayarlar --- */
+body{margin:0;font-family:'Inter',sans-serif;background:#f9fafb;color:#2c2c2c;line-height:1.7}
+a{text-decoration:none;color:inherit}
+.container{max-width:1200px;margin:auto;padding:70px 20px}
+h2,h3{font-family:'Playfair Display',serif}
+
+/* --- Header --- */
+header{background:#0b1324;color:#fff;position:sticky;top:0;z-index:99;box-shadow:0 4px 12px rgba(0,0,0,.1);}
+header .container{display:flex;justify-content:space-between;align-items:center;padding:20px 20px}
+header h1{margin:0;font-size:28px;font-weight:700}
+nav a{color:#c7a44a;margin-left:25px;font-weight:500;transition:color .3s}
+nav a:hover{color:#fff}
+
+/* --- Hero --- */
+.hero{background:#fff;border-radius:20px;padding:80px 30px;text-align:center;box-shadow:0 15px 40px rgba(0,0,0,.08);transition:transform .3s}
+.hero:hover{transform:translateY(-4px)}
+.hero h2{font-size:46px;color:#0b1324;margin-bottom:20px}
+.hero p{max-width:800px;margin:20px auto;font-size:17px;line-height:1.9;color:#444}
+.hero a{display:inline-block;margin-top:25px;padding:16px 40px;background:#c7a44a;color:#0b1324;border-radius:50px;font-weight:600;transition:background .3s}
+.hero a:hover{background:#b8943f;color:#fff}
+
+/* --- Uzmanlık Alanları --- */
+.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px;margin-top:80px}
+.service{background:#fff;padding:35px;border-radius:18px;border-left:6px solid #c7a44a;box-shadow:0 10px 30px rgba(0,0,0,.05);transition:transform .3s,box-shadow .3s}
+.service:hover{transform:translateY(-5px);box-shadow:0 15px 40px rgba(0,0,0,.08)}
+.service h3{font-size:22px;margin-bottom:12px}
+.service p{color:#555;margin-bottom:15px}
+.service a{color:#0b1324;font-weight:600;transition:color .3s}
+.service a:hover{color:#c7a44a}
+
+/* --- Öne Çıkan Makaleler --- */
+.latest-articles{background:#fff;padding:80px 20px;margin-top:90px}
+.latest-articles h2{text-align:center;font-size:38px;margin-bottom:10px;color:#0b1324}
+.latest-articles .subtitle{text-align:center;color:#555;margin-bottom:50px;font-size:17px}
+.articles-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px}
+.article-box{background:#f9fafb;border-radius:18px;padding:30px;box-shadow:0 8px 25px rgba(0,0,0,.05);display:flex;flex-direction:column;transition:transform .3s,box-shadow .3s}
+.article-box:hover{transform:translateY(-5px);box-shadow:0 12px 35px rgba(0,0,0,.08)}
+.article-box h3{font-size:22px;color:#0b1324;margin:12px 0}
+.article-box p{flex:1;color:#555}
+.article-box a{margin-top:15px;font-weight:600;color:#c7a44a;transition:color .3s}
+.article-box a:hover{color:#0b1324}
+
+/* --- Hizmet Bölgeleri --- */
+.locations{margin-top:90px}
+.location-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px}
+.location{background:#fff;padding:25px;border-radius:14px;text-align:center;box-shadow:0 8px 25px rgba(0,0,0,.05);transition:transform .3s}
+.location:hover{transform:translateY(-4px)}
+.location a{font-weight:600;color:#0b1324;font-size:17px}
+.location a:hover{color:#c7a44a}
+
+/* --- Footer --- */
+footer{background:#0b1324;color:#c7a44a;padding:60px 20px;margin-top:100px;text-align:center}
+footer p{font-size:14px;line-height:1.8}
+footer a{color:#c7a44a;transition:color .3s}
+footer a:hover{color:#fff}
+
+/* --- Responsive --- */
+@media(max-width:768px){
+  header .container{flex-direction:column;gap:15px}
+  .hero{padding:50px 20px}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="container">
+<h1>Salgür Hukuk & Danışmanlık</h1>
+<nav>
+<a href="index.html">Anasayfa</a>
+<a href="usak-avukat.html">Uşak Avukat</a>
+<a href="makaleler.html">Hukuki Makaleler</a>
+<a href="hakkimizda.html">Hakkımızda</a>
+<a href="iletisim.html">İletişim</a>
+</nav>
+</div>
+</header>
+
+<div class="container">
+
+<!-- Hero -->
+<div class="hero">
+<h2>Uşak’ta Profesyonel Avukatlık Hizmeti</h2>
+<p>
+Salgür Hukuk & Danışmanlık; Uşak Merkez, Sivaslı ve Karahallı ilçelerinde
+boşanma, ceza ve iş hukuku alanlarında hukuki danışmanlık ve dava takibi hizmeti sunmaktadır.
+</p>
+<a href="iletisim.html">İletişime Geç</a>
+</div>
+
+<!-- Uzmanlık Alanları -->
+<h2>Uzmanlık Alanlarımız</h2>
+<div class="services">
+<div class="service">
+<h3>Boşanma Hukuku</h3>
+<p>Anlaşmalı ve çekişmeli boşanma, velayet, nafaka ve mal paylaşımı.</p>
+<a href="usak-bosanma-avukati.html">Detaylı Bilgi →</a>
+</div>
+<div class="service">
+<h3>Ceza Hukuku</h3>
+<p>Soruşturma ve kovuşturma aşamalarında etkin savunma.</p>
+<a href="usak-ceza-avukati.html">Detaylı Bilgi →</a>
+</div>
+<div class="service">
+<h3>İş Hukuku</h3>
+<p>Kıdem, ihbar tazminatı, işe iade ve işçilik alacakları.</p>
+<a href="usak-is-hukuku-avukati.html">Detaylı Bilgi →</a>
+</div>
+<div class="service">
+<h3>Miras Hukuku</h3>
+<p>Miras paylaşımı, izale-i şuyu ve vasiyetname işlemlerinde uzman hukuki destek sağlıyoruz.</p>
+<a href="usak-gayrimenkul-ve-miras-avukati.html">Detaylı Bilgi →</a>
+</div>
+<div class="service">
+<h3>Gayrimenkul Hukuku</h3>
+<p>Taşınmazlara ilişkin uyuşmazlıklar ve çözüm yolları.</p>
+<a href="gayrimenkul-ve-miras-hukuku.html">Detaylı Bilgi →</a>
+</div>
+</div>
+
+<!-- Öne Çıkan Makaleler -->
+<section class="latest-articles">
+<h2>Öne Çıkan Hukuki Makaleler</h2>
+<p class="subtitle">Boşanma, ceza, iş, gayrimenkul ve miras hukuku alanlarında en çok merak edilen konular, Av. M. Eşref Salgür tarafından hazırlanan güncel ve bilgilendirici makaleler.</p>
+
+<div class="articles-grid">
+<article class="article-box">
+<h3>Anlaşmalı Boşanma Şartları Nelerdir?</h3>
+<p>Anlaşmalı boşanma için gerekli koşullar, protokol düzenlenmesi ve dava süreci.</p>
+<a href="makaleler/bosanma-hukuku/anlasmali-bosanma-sartlari.html">Devamını Oku →</a>
+</article>
+
+<article class="article-box">
+<h3>Çekişmeli Boşanma Davası Ne Kadar Sürer?</h3>
+<p>Çekişmeli boşanma davalarında süreyi etkileyen faktörler ve yargılama aşamaları.</p>
+<a href="makaleler/bosanma-hukuku/cekismeli-bosanma-davasi.html">Devamını Oku →</a>
+</article>
+
+<article class="article-box">
+<h3>Ortaklığın Giderilmesi (İzale-i Şuyu) Davası</h3>
+<p>Paylı ve elbirliği mülkiyetinde ortaklığın giderilmesi davasının şartları.</p>
+<a href="makaleler/gayrimenkul-hukuku/ortakligin-giderilmesi-izale-i-suyu.html">Devamını Oku →</a>
+</article>
+
+<article class="article-box">
+<h3>Muris Muvazaası (Mirastan Mal Kaçırma)</h3>
+<p>Miras bırakanın mal kaçırma amacıyla yaptığı işlemlerin hukuki sonuçları.</p>
+<a href="makaleler/miras-hukuku/muris-muvazaasi.html">Devamını Oku →</a>
+</article>
+
+<article class="article-box">
+<h3>Kıdem Tazminatı Nasıl Hesaplanır?</h3>
+<p>Kıdem tazminatı hesaplama yöntemi, güncel tavan tutar ve örnek hesaplamalar.</p>
+<a href="makaleler/is-hukuku/kidem-tazminati-hesaplama.html">Devamını Oku →</a>
+</article>
+
+<article class="article-box">
+<h3>Tutuklamaya İtiraz Nasıl Yapılır?</h3>
+<p>Tutuklama kararına karşı itiraz süresi, yetkili merci ve uygulamada dikkat edilmesi gerekenler.</p>
+<a href="makaleler/ceza-hukuku/tutuklamaya-itiraz.html">Devamını Oku →</a>
+</article>
+</div>
+
+<div style="text-align:center;margin-top:50px">
+<a href="makaleler.html" style="background:#0b1324;color:#c7a44a;padding:14px 32px;border-radius:999px;font-weight:600;">Tüm Makaleleri Gör</a>
+</div>
+</section>
+
+<!-- Hizmet Bölgeleri -->
+<div class="locations">
+<h2>Hizmet Verilen Bölgeler</h2>
+<div class="location-grid">
+<div class="location"><a href="usak-avukat.html">Uşak Merkez</a></div>
+<div class="location"><a href="sivasli-avukat.html">Sivaslı</a></div>
+<div class="location"><a href="karahalli-avukat.html">Karahallı</a></div>
+</div>
+</div>
 
 <footer style="background:#0b1324;color:#c7a44a;padding:60px 20px;">
   <div class="container" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:40px;text-align:left;align-items:start;">
@@ -39,3 +272,7 @@
     <p>Bu internet sitesindeki bilgiler bilgilendirme amaçlıdır, hukuki danışmanlık niteliği taşımaz.</p>
   </div>
 </footer>
+
+
+</body>
+</html>
