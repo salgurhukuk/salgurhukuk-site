@@ -1,148 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <url>
-    <loc>https://salgurhukuk.com/</loc>
-    <priority>1.00</priority>
-  </url>
+  <url><loc>https://salgurhukuk.com/</loc><priority>1.00</priority></url>
+  <url><loc>https://salgurhukuk.com/index.html</loc><priority>0.80</priority></url>
+  <url><loc>https://salgurhukuk.com/hakkimizda.html</loc><priority>0.80</priority></url>
+  <url><loc>https://salgurhukuk.com/iletisim.html</loc><priority>0.80</priority></url>
+  <url><loc>https://salgurhukuk.com/makaleler.html</loc><priority>0.80</priority></url>
+  <url><loc>https://salgurhukuk.com/bosanma-hukuku.html</loc><priority>0.90</priority></url>
+  <url><loc>https://salgurhukuk.com/ceza-hukuku.html</loc><priority>0.90</priority></url>
+  <url><loc>https://salgurhukuk.com/is-hukuku.html</loc><priority>0.90</priority></url>
+  <url><loc>https://salgurhukuk.com/gayrimenkul-ve-miras-hukuku.html</loc><priority>0.90</priority></url>
+  <url><loc>https://salgurhukuk.com/usak-avukat.html</loc><priority>0.85</priority></url>
+  <url><loc>https://salgurhukuk.com/usak-bosanma-avukati.html</loc><priority>0.85</priority></url>
+  <url><loc>https://salgurhukuk.com/usak-ceza-avukati.html</loc><priority>0.85</priority></url>
+  <url><loc>https://salgurhukuk.com/usak-is-hukuku-avukati.html</loc><priority>0.85</priority></url>
+  <url><loc>https://salgurhukuk.com/usak-gayrimenkul-ve-miras-avukati.html</loc><priority>0.85</priority></url>
+  <url><loc>https://salgurhukuk.com/karahalli-avukat.html</loc><priority>0.80</priority></url>
+  <url><loc>https://salgurhukuk.com/karahalli-bosanma-avukati.html</loc><priority>0.80</priority></url>
+  <url><loc>https://salgurhukuk.com/karahalli-ceza-avukati.html</loc><priority>0.80</priority></url>
+  <url><loc>https://salgurhukuk.com/karahalli-is-hukuku-avukati.html</loc><priority>0.80</priority></url>
+  <url><loc>https://salgurhukuk.com/karahalli-gayrimenkul-ve-miras-avukati.html</loc><priority>0.80</priority></url>
+  <url><loc>https://salgurhukuk.com/sivasli-avukat.html</loc><priority>0.80</priority></url>
+  <url><loc>https://salgurhukuk.com/sivasli-bosanma-avukati.html</loc><priority>0.80</priority></url>
+  <url><loc>https://salgurhukuk.com/sivasli-ceza-avukati.html</loc><priority>0.80</priority></url>
+  <url><loc>https://salgurhukuk.com/sivasli-is-hukuku-avukati.html</loc><priority>0.80</priority></url>
+  <url><loc>https://salgurhukuk.com/sivasli-gayrimenkul-ve-miras-avukati.html</loc><priority>0.80</priority></url>
+  <url><loc>https://salgurhukuk.com/makaleler/bosanma-hukuku/anlasmali-bosanma-sartlari.html</loc><priority>0.75</priority></url>
+  <url><loc>https://salgurhukuk.com/makaleler/bosanma-hukuku/cekismeli-bosanma.html</loc><priority>0.75</priority></url>
+  <url><loc>https://salgurhukuk.com/makaleler/ceza-hukuku/tutuklamaya-itiraz.html</loc><priority>0.75</priority></url>
+  <url><loc>https://salgurhukuk.com/makaleler/is-hukuku/kidem-tazminati-hesaplama.html</loc><priority>0.75</priority></url>
+  <url><loc>https://salgurhukuk.com/makaleler/gayrimenkul-ve-miras-hukuku/miras-paylasimi.html</loc><priority>0.75</priority></url>
 
   <url>
-    <loc>https://salgurhukuk.com/index.html</loc>
-    <priority>0.80</priority>
-  </url>
-
-  <url>
-    <loc>https://salgurhukuk.com/hakkimizda.html</loc>
-    <priority>0.80</priority>
-  </url>
-
-  <url>
-    <loc>https://salgurhukuk.com/iletisim.html</loc>
-    <priority>0.80</priority>
-  </url>
-
-  <url>
-    <loc>https://salgurhukuk.com/makaleler.html</loc>
-    <priority>0.80</priority>
-  </url>
-
-  <url>
-    <loc>https://salgurhukuk.com/bosanma-hukuku.html</loc>
-    <priority>0.90</priority>
-  </url>
-
-  <url>
-    <loc>https://salgurhukuk.com/ceza-hukuku.html</loc>
-    <priority>0.90</priority>
-  </url>
-
-  <url>
-    <loc>https://salgurhukuk.com/is-hukuku.html</loc>
-    <priority>0.90</priority>
-  </url>
-
-  <url>
-    <loc>https://salgurhukuk.com/gayrimenkul-ve-miras-hukuku.html</loc>
-    <priority>0.90</priority>
-  </url>
-
-  <url>
-    <loc>https://salgurhukuk.com/usak-avukat.html</loc>
-    <priority>0.85</priority>
-  </url>
-
-  <url>
-    <loc>https://salgurhukuk.com/usak-bosanma-avukati.html</loc>
-    <priority>0.85</priority>
-  </url>
-
-  <url>
-    <loc>https://salgurhukuk.com/usak-ceza-avukati.html</loc>
-    <priority>0.85</priority>
-  </url>
-
-  <url>
-    <loc>https://salgurhukuk.com/usak-is-hukuku-avukati.html</loc>
-    <priority>0.85</priority>
-  </url>
-
-  <url>
-    <loc>https://salgurhukuk.com/usak-gayrimenkul-ve-miras-avukati.html</loc>
-    <priority>0.85</priority>
-  </url>
-
-  <url>
-    <loc>https://salgurhukuk.com/karahalli-avukat.html</loc>
-    <priority>0.80</priority>
-  </url>
-
-  <url>
-    <loc>https://salgurhukuk.com/karahalli-bosanma-avukati.html</loc>
-    <priority>0.80</priority>
-  </url>
-
-  <url>
-    <loc>https://salgurhukuk.com/karahalli-ceza-avukati.html</loc>
-    <priority>0.80</priority>
-  </url>
-
-  <url>
-    <loc>https://salgurhukuk.com/karahalli-is-hukuku-avukati.html</loc>
-    <priority>0.80</priority>
-  </url>
-
-  <url>
-    <loc>https://salgurhukuk.com/karahalli-gayrimenkul-ve-miras-avukati.html</loc>
-    <priority>0.80</priority>
-  </url>
-
-  <url>
-    <loc>https://salgurhukuk.com/sivasli-avukat.html</loc>
-    <priority>0.80</priority>
-  </url>
-
-  <url>
-    <loc>https://salgurhukuk.com/sivasli-bosanma-avukati.html</loc>
-    <priority>0.80</priority>
-  </url>
-
-  <url>
-    <loc>https://salgurhukuk.com/sivasli-ceza-avukati.html</loc>
-    <priority>0.80</priority>
-  </url>
-
-  <url>
-    <loc>https://salgurhukuk.com/sivasli-is-hukuku-avukati.html</loc>
-    <priority>0.80</priority>
-  </url>
-
-  <url>
-    <loc>https://salgurhukuk.com/sivasli-gayrimenkul-ve-miras-avukati.html</loc>
-    <priority>0.80</priority>
-  </url>
-
-  <url>
-    <loc>https://salgurhukuk.com/makaleler/bosanma-hukuku/anlasmali-bosanma-sartlari.html</loc>
+    <loc>https://salgurhukuk.com/makaleler/gayrimenkul-hukuku/ortakligin-giderilmesi-davalarinda-tebligat-sorunlari.html</loc>
     <priority>0.75</priority>
   </url>
-
   <url>
-    <loc>https://salgurhukuk.com/makaleler/bosanma-hukuku/cekismeli-bosanma.html</loc>
-    <priority>0.75</priority>
-  </url>
-
-  <url>
-    <loc>https://salgurhukuk.com/makaleler/ceza-hukuku/tutuklamaya-itiraz.html</loc>
-    <priority>0.75</priority>
-  </url>
-
-  <url>
-    <loc>https://salgurhukuk.com/makaleler/is-hukuku/kidem-tazminati-hesaplama.html</loc>
-    <priority>0.75</priority>
-  </url>
-
-  <url>
-    <loc>https://salgurhukuk.com/makaleler/gayrimenkul-ve-miras-hukuku/miras-paylasimi.html</loc>
+    <loc>https://salgurhukuk.com/makaleler/tazminat-hukuku/hasar-danismanlik-sirketlerinin-magduru-olmayin.html</loc>
     <priority>0.75</priority>
   </url>
 
