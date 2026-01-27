@@ -3,437 +3,302 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
 <title>Hukuki Makaleler | Salgür Hukuk & Danışmanlık</title>
-<meta name="description" content="Boşanma, ceza ve iş hukuku alanlarında Av. M. Eşref Salgür tarafından hazırlanan güncel ve güvenilir hukuki makaleler.">
-
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
 <style>
-body{margin:0;font-family:'Inter',sans-serif;background:#f4f6f8;color:#2c2c2c}
+    body{margin:0;font-family:'Inter',sans-serif;background:#f4f6f8;color:#2c2c2c;line-height:1.6}
+    header{background:#0b1324;color:#fff;padding:20px 0}
+    header .container{max-width:1200px;margin:auto;display:flex;justify-content:space-between;align-items:center;padding:0 20px}
+    header h1{font-family:'Playfair Display',serif;margin:0;font-size:24px;color:#fff}
+    nav a{color:#c7a44a;margin-left:22px;text-decoration:none;font-weight:500}
 
-header{background:#0b1324;color:#fff}
-header .container{
-  max-width:1150px;
-  margin:auto;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:28px 20px
-}
-header h1{font-family:'Playfair Display',serif;margin:0;font-size:26px}
-nav a{color:#c7a44a;margin-left:22px;text-decoration:none;font-weight:500}
+    .container{max-width:1200px;margin:auto;padding:40px 20px}
 
-.container{max-width:1150px;margin:auto;padding:60px 20px}
+    .section-title {text-align:center; margin-bottom:40px}
+    .section-title h2 {font-family:'Playfair Display',serif; font-size:36px; color:#0b1324; margin-bottom:10px}
 
-.hero{
-  background:#fff;
-  border-radius:18px;
-  padding:50px;
-  box-shadow:0 12px 35px rgba(0,0,0,.06);
-  margin-bottom:70px
-}
-.hero h2{
-  font-family:'Playfair Display',serif;
-  font-size:40px;
-  color:#0b1324;
-  margin-bottom:10px
-}
-.hero p{line-height:1.9}
+    /* === FİLTRE BUTONLARI === */
+    .filter-container {display:flex; flex-wrap:wrap; gap:12px; margin-bottom:50px; justify-content:center}
+    .filter-btn {
+        padding:12px 24px; border:none; background:#fff; color:#0b1324; cursor:pointer; 
+        border-radius:8px; font-weight:600; box-shadow:0 4px 15px rgba(0,0,0,0.05);
+        transition:all 0.3s ease; border:1px solid #e5e7eb;
+    }
+    .filter-btn:hover, .filter-btn.active {background:#0b1324; color:#c7a44a; border-color:#0b1324; transform:translateY(-2px)}
 
-/* === KATEGORİLER YAN YANA === */
-.categories-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-  gap:35px
-}
+    /* === KART IZGARASI === */
+    .categories-grid {display:grid; grid-template-columns:repeat(auto-fill, minmax(350px, 1fr)); gap:30px}
 
-.category{
-  background:#ffffff;
-  border-radius:20px;
-  padding:35px;
-  box-shadow:0 10px 30px rgba(0,0,0,.05);
-  display:flex;
-  flex-direction:column
-}
+    .article-card {
+        background:#fff; border-radius:15px; padding:30px; 
+        box-shadow:0 10px 25px rgba(0,0,0,0.05); display:none; /* JS ile açılacak */
+        flex-direction:column; border-top:4px solid #c7a44a;
+        transition:transform 0.3s ease;
+    }
+    .article-card.show {display:flex}
+    .article-card:hover {transform:translateY(-8px)}
 
-.category h3{
-  font-family:'Playfair Display',serif;
-  font-size:28px;
-  color:#0b1324;
-  margin-bottom:25px
-}
+    .tag {color:#c7a44a; font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:1px; margin-bottom:12px}
+    .article-card h4 {font-family:'Playfair Display',serif; font-size:22px; margin:10px 0; color:#0b1324}
+    .article-card p {font-size:15px; color:#555; flex-grow:1; margin-bottom:20px}
+    .article-card a {
+        font-weight:600; text-decoration:none; color:#0b1324; 
+        display:flex; align-items:center; gap:8px; transition:color 0.2s;
+    }
+    .article-card a:hover {color:#c7a44a}
 
-.article-card{
-  border-top:1px solid #e5e7eb;
-  padding-top:20px;
-  margin-top:20px
-}
+    footer{background:#0b1324; color:#c7a44a; padding:40px 0; text-align:center; margin-top:80px}
 
-.article-card:first-child{
-  border-top:none;
-  padding-top:0;
-  margin-top:0
-}
-
-.tag{
-  display:inline-block;
-  background:#0b1324;
-  color:#c7a44a;
-  border-radius:6px;
-  padding:6px 10px;
-  font-size:12px;
-  margin-bottom:10px
-}
-
-.article-card h4{
-  font-family:'Playfair Display',serif;
-  font-size:20px;
-  margin:10px 0;
-  color:#0b1324
-}
-
-.article-card p{
-  line-height:1.7;
-  font-size:15px
-}
-
-.article-card a{
-  display:inline-block;
-  margin-top:12px;
-  font-weight:600;
-  text-decoration:none;
-  color:#0b1324
-}
-
-footer{
-  background:#0b1324;
-  color:#c7a44a;
-  padding:45px 0;
-  text-align:center;
-  margin-top:100px
-}
-
-@media(max-width:768px){
-  .hero h2{font-size:30px}
-}
+    @media(max-width:768px) { .categories-grid {grid-template-columns:1fr} }
 </style>
 </head>
 
 <body>
 
 <header>
-  <div class="container">
-    <h1>Salgür Hukuk & Danışmanlık</h1>
-    <nav>
-      <a href="index.html">Anasayfa</a>
-      <a href="usak-avukat.html">Uşak Avukat</a>
-      <a href="makaleler.html">Makaleler</a>
-      <a href="iletisim.html">İletişim</a>
-    </nav>
-  </div>
+    <div class="container">
+        <h1>Salgür Hukuk</h1>
+        <nav>
+            <a href="index.html">Anasayfa</a>
+            <a href="makaleler.html">Makaleler</a>
+            <a href="iletisim.html">İletişim</a>
+        </nav>
+    </div>
 </header>
 
 <div class="container">
-
-  <section class="hero">
-    <h2>Hukuki Makaleler</h2>
-    <p>
-      Boşanma, ceza ve iş hukuku alanlarında sık karşılaşılan hukuki sorunlara ilişkin,
-      <strong>Av. M. Eşref Salgür</strong> tarafından hazırlanan bilgilendirici içerikler.
-    </p>
-  </section>
-
-  <!-- KATEGORİLER YAN YANA -->
-  <section class="categories-grid">
-
-    <!-- BOŞANMA -->
-    <div class="category">
-  <h3>Boşanma Hukuku</h3>
-
-  <div class="article-card">
-    <span class="tag">Boşanma Hukuku</span>
-    <h4>Anlaşmalı Boşanma Şartları Nelerdir?</h4>
-    <p>Anlaşmalı boşanma için gerekli şartlar ve protokol süreci.</p>
-    <a href="makaleler/bosanma-hukuku/anlasmali-bosanma-sartlari.html">
-      Devamını Oku →
-    </a>
-  </div>
-
-  <div class="article-card">
-    <span class="tag">Boşanma Hukuku</span>
-    <h4>Çekişmeli Boşanma Davası Nasıl Açılır?</h4>
-    <p>Çekişmeli boşanma süreci, deliller ve dava aşamaları.</p>
-    <a href="makaleler/bosanma-hukuku/cekismeli-bosanma-davasi.html">
-      Devamını Oku →
-    </a>
-  </div>
-
-  <div class="article-card">
-    <span class="tag">Boşanma Hukuku</span>
-    <h4>Boşanmada Velayet Kime Verilir?</h4>
-    <p>Çocuğun üstün yararı ilkesine göre velayet değerlendirmesi.</p>
-    <a href="makaleler/bosanma-hukuku/velayet-kime-verilir.html">
-      Devamını Oku →
-    </a>
-  </div>
-
-  <div class="article-card">
-    <span class="tag">Boşanma Hukuku</span>
-    <h4>Nafaka Türleri ve Güncel Uygulamalar</h4>
-    <p>Yoksulluk, iştirak ve tedbir nafakası hakkında bilgiler.</p>
-    <a href="makaleler/bosanma-hukuku/nafaka-turleri.html">
-      Devamını Oku →
-    </a>
-  </div>
-
-  <div class="article-card">
-    <span class="tag">Boşanma Hukuku</span>
-    <h4>Mal Paylaşımı Davası Ne Zaman Açılır?</h4>
-    <p>Edinilmiş mallara katılma rejimi ve dava süreleri.</p>
-    <a href="makaleler/bosanma-hukuku/mal-paylasimi-davasi.html">
-      Devamını Oku →
-    </a>
-  </div>
-
-</div>
-
-
-    <!-- CEZA -->
-    <div class="category">
-      <h3>Ceza Hukuku</h3>
-
-      <div class="article-card">
-        <span class="tag">Ceza Hukuku</span>
-        <h4>Tutuklamaya İtiraz Nasıl Yapılır?</h4>
-        <p>Tutuklama kararına karşı itiraz süresi ve hukuki yol haritası.</p>
-        <a href="makaleler/ceza-hukuku/tutuklamaya-itiraz.html">
-          Devamını Oku →
-        </a>
-      </div>
-		<div class="article-card">
-        <span class="tag">Ceza Hukuku</span>
-        <h4>Adli Kontrol Nedir?</h4>
-        <p>Kişi özgürlüğünü daha az sınırlayan tedbir; adli kontrol</p>
-        <a href="makaleler/ceza-hukuku/adli-kontrol-nedir.html">
-          Devamını Oku →
-        </a>
-      </div>
-		<div class="article-card">
-        <span class="tag">Ceza Hukuku</span>
-        <h4>İfade Verirken Nelere Dikkat Edilmelidir?</h4>
-        <p>Ceza soruşturmasının en kritik aşamalarından biri ifade alma sürecidir.</p>
-        <a href="makaleler/ceza-hukuku/ifade-verme-rehberi.html">
-          Devamını Oku →
-        </a>
-      </div>
-		<div class="article-card">
-        <span class="tag">Ceza Hukuku</span>
-        <h4>Gözaltı ile Tutuklamanın Farkı?</h4>
-        <p>Her iki koruma tedbiri de kişi özgürlüğünü sınırlandırır ancak hukuki nitelikleri ve sonuçları tamamen farklıdır.</p>
-        <a href="makaleler/ceza-hukuku/gozalti-ve-tutuklama-farki.html">
-          Devamını Oku →
-        </a>
-      </div>
-		<div class="article-card">
-        <span class="tag">Ceza Hukuku</span>
-        <h4>Gözaltı Süresi Ne Kadardır?</h4>
-        <p>Ceza Muhakemesi Kanunu’na göre, normal şartlarda gözaltı süresi en fazla 24 saattir</p>
-        <a href="makaleler/ceza-hukuku/gozalti-suresi.html">
-          Devamını Oku →
-        </a>
-      </div>
+    <div class="section-title">
+        <h2>Hukuki Bilgi Bankası</h2>
+        <p>Aradığınız konuyu kategorilere göre filtreleyerek inceleyebilirsiniz.</p>
     </div>
 
-    <!-- İŞ -->
-    <div class="category">
-      <h3>İş Hukuku</h3>
-
-      <div class="article-card">
-        <span class="tag">İş Hukuku</span>
-        <h4>Kıdem Tazminatı Nasıl Hesaplanır?</h4>
-        <p>Kıdem tazminatı hesaplama yöntemi ve güncel tavan tutarlar.</p>
-        <a href="makaleler/is-hukuku/kidem-tazminati-hesaplama.html">
-          Devamını Oku →
-        </a>
-      </div>
-	  <div class="article-card">
-  <span class="tag">İş Hukuku</span>
-  <h4>İhbar Tazminatı Nedir, Kimler Alabilir?</h4>
-  <p>İhbar tazminatının şartları, süreleri ve hesaplama yöntemi.</p>
-  <a href="makaleler/is-hukuku/ihbar-tazminati-nedir.html">
-    Devamını Oku →
-  </a>
-</div>
-<div class="article-card">
-        <span class="tag">İş Hukuku</span>
-        <h4>İşe İade Davası Nedir, Şartları Nelerdir?</h4>
-        <p>İşe iade davası, iş sözleşmesi geçerli bir sebep olmaksızın feshedilen işçilerin</p>
-        <a href="makaleler/is-hukuku/ise-iade-davasi.html">
-          Devamını Oku →
-        </a>
-      </div>
-		<div class="article-card">
-        <span class="tag">İş Hukuku</span>
-        <h4>Kıdem Tazminatı Nasıl Hesaplanır?</h4>
-        <p>Kıdem tazminatı hesaplama yöntemi ve güncel tavan tutarlar.</p>
-        <a href="makaleler/is-hukuku/kidem-tazminati-hesaplama.html">
-          Devamını Oku →
-        </a>
-      </div>
-		<div class="article-card">
-        <span class="tag">İş Hukuku</span>
-        <h4>Kıdem Tazminatı Nasıl Hesaplanır?</h4>
-        <p>Kıdem tazminatı hesaplama yöntemi ve güncel tavan tutarlar.</p>
-        <a href="makaleler/is-hukuku/kidem-tazminati-hesaplama.html">
-          Devamını Oku →
-        </a>
-      </div>
+    <div class="filter-container">
+        <button class="filter-btn active" onclick="filterSelection('all')">Tümü</button>
+        <button class="filter-btn" onclick="filterSelection('bosanma')">Boşanma</button>
+        <button class="filter-btn" onclick="filterSelection('ceza')">Ceza</button>
+        <button class="filter-btn" onclick="filterSelection('is')">İş Hukuku</button>
+        <button class="filter-btn" onclick="filterSelection('miras')">Miras & Gayrimenkul</button>
+        <button class="filter-btn" onclick="filterSelection('borclar')">Borçlar</button>
+        <button class="filter-btn" onclick="filterSelection('tazminat')">Tazminat</button>
     </div>
-<div class="category">
-  <h3>Gayrimenkul & Miras Hukuku</h3>
 
-  <div class="article-card">
-    <span class="tag">Miras Hukuku</span>
-    <h4>Miras Paylaşımı Nasıl Yapılır?</h4>
-    <p>Mirasçıların hakları ve paylaşım süreci.</p>
-    <a href="makaleler/miras-hukuku/miras-paylasimi.html">
-      Devamını Oku →
-    </a>
-  </div>
+    <div class="categories-grid" id="articleGrid">
+        
+        <div class="article-card bosanma">
+            <span class="tag">Boşanma Hukuku</span>
+            <h4>Anlaşmalı Boşanma Şartları</h4>
+            <p>Anlaşmalı boşanma davası açabilmek için gerekli yasal süre ve protokol detayları.</p>
+            <a href="makaleler/bosanma-hukuku/anlasmali-bosanma-sartlari.html">Makaleyi Oku →</a>
+        </div>
+        <div class="article-card bosanma">
+            <span class="tag">Boşanma Hukuku</span>
+            <h4>Çekişmeli Boşanma Davası</h4>
+            <p>Eşler arasında uzlaşma sağlanamadığı durumlarda dava süreci ve deliller.</p>
+            <a href="makaleler/bosanma-hukuku/cekismeli-bosanma-davasi.html">Makaleyi Oku →</a>
+        </div>
+        <div class="article-card bosanma">
+            <span class="tag">Boşanma Hukuku</span>
+            <h4>Velayet Kime Verilir?</h4>
+            <p>Boşanma aşamasında çocuğun velayeti belirlenirken mahkemenin kriterleri.</p>
+            <a href="makaleler/bosanma-hukuku/velayet-kime-verilir.html">Makaleyi Oku →</a>
+        </div>
+        <div class="article-card bosanma">
+            <span class="tag">Boşanma Hukuku</span>
+            <h4>Nafaka Türleri ve Miktarı</h4>
+            <p>İştirak, yoksulluk ve tedbir nafakası arasındaki farklar ve hesaplama yöntemleri.</p>
+            <a href="makaleler/bosanma-hukuku/nafaka-turleri.html">Makaleyi Oku →</a>
+        </div>
+        <div class="article-card bosanma">
+            <span class="tag">Boşanma Hukuku</span>
+            <h4>Mal Paylaşımı Davası</h4>
+            <p>Evlilik birliği içinde edinilen malların paylaşımı ve katkı payı alacağı.</p>
+            <a href="makaleler/bosanma-hukuku/mal-paylasimi-davasi.html">Makaleyi Oku →</a>
+        </div>
 
-  <div class="article-card">
-    <span class="tag">Gayrimenkul Hukuku</span>
-    <h4>Tapu İptal ve Tescil Davası</h4>
-    <p>Hatalı tapu kayıtlarının düzeltilmesi.</p>
-    <a href="makaleler/gayrimenkul-hukuku/tapu-iptal-ve-tescil-davasi.html">
-      Devamını Oku →
-    </a>
-  </div>
-<div class="article-card">
-    <span class="tag">Gayrimenkul Hukuku</span>
-    <h4>Ortaklığın Giderilmesi Davası</h4>
-    <p>Ortaklığın Giderilmesi Davasında Tebligat Sorunu ve Çözüm Yolları.</p>
-    <a href="makaleler/gayrimenkul-hukuku/ortakligin-giderilmesi-davalarinda-tebligat-sorunlari.html">
-      Devamını Oku →
-    </a>
-  </div>
-	<div class="article-card">
-    <span class="tag">Miras Hukuku</span>
-    <h4>Miras Paylaşımı Nasıl Yapılır?</h4>
-    <p>Mirasçıların hakları ve paylaşım süreci.</p>
-    <a href="makaleler/miras-hukuku/miras-paylasimi.html">
-      Devamını Oku →
-    </a>
-  </div>
-	<div class="article-card">
-    <span class="tag">Miras Hukuku</span>
-    <h4>Miras Paylaşımı Nasıl Yapılır?</h4>
-    <p>Mirasçıların hakları ve paylaşım süreci.</p>
-    <a href="makaleler/miras-hukuku/miras-paylasimi.html">
-      Devamını Oku →
-    </a>
-  </div>
-	
-</div>
-	   <!-- BORCLAR -->
-<div class="category">
-  <h3>Borclar Hukuku</h3>
+        <div class="article-card ceza">
+            <span class="tag">Ceza Hukuku</span>
+            <h4>Tutuklamaya İtiraz Süreci</h4>
+            <p>Tutuklama kararına karşı hangi mercilere ve nasıl itiraz edilir?</p>
+            <a href="makaleler/ceza-hukuku/tutuklamaya-itiraz.html">Makaleyi Oku →</a>
+        </div>
+        <div class="article-card ceza">
+            <span class="tag">Ceza Hukuku</span>
+            <h4>Adli Kontrol Kararı Nedir?</h4>
+            <p>Yurt dışı çıkış yasağı ve imza yükümlülüğü gibi adli kontrol tedbirleri.</p>
+            <a href="makaleler/ceza-hukuku/adli-kontrol-nedir.html">Makaleyi Oku →</a>
+        </div>
+        <div class="article-card ceza">
+            <span class="tag">Ceza Hukuku</span>
+            <h4>İfade Verme Rehberi</h4>
+            <p>Emniyet veya savcılıkta ifade verirken haklarınız ve dikkat etmeniz gerekenler.</p>
+            <a href="makaleler/ceza-hukuku/ifade-verme-rehberi.html">Makaleyi Oku →</a>
+        </div>
+        <div class="article-card ceza">
+            <span class="tag">Ceza Hukuku</span>
+            <h4>Gözaltı ve Tutuklama Farkı</h4>
+            <p>Hukuki süreçte gözaltına alınma ile tutuklanma arasındaki temel farklar.</p>
+            <a href="makaleler/ceza-hukuku/gozalti-ve-tutuklama-farki.html">Makaleyi Oku →</a>
+        </div>
+        <div class="article-card ceza">
+            <span class="tag">Ceza Hukuku</span>
+            <h4>Gözaltı Süreleri Hakkında</h4>
+            <p>Bireysel ve toplu suçlarda yasal gözaltı süresi ve uzatma kararları.</p>
+            <a href="makaleler/ceza-hukuku/gozalti-suresi.html">Makaleyi Oku →</a>
+        </div>
 
-  <div class="article-card">
-    <span class="tag">Borclar Hukuku</span>
-    <h4>Alacak Davası Nedir?</h4>
-    <p>Parasal alacağı hukuk yoluyla talep etmek amacıyla açılan dava türüdür. </p>
-    <a href="makaleler/borclar-hukuku/alacak-davasi-nedir.html">
-      Devamını Oku →
-    </a>
-  </div>
+        <div class="article-card is">
+            <span class="tag">İş Hukuku</span>
+            <h4>Kıdem Tazminatı Hesaplama</h4>
+            <p>Çalışılan yıla göre kıdem tazminatı nasıl hesaplanır ve tavan ücretler.</p>
+            <a href="makaleler/is-hukuku/kidem-tazminati-hesaplama.html">Makaleyi Oku →</a>
+        </div>
+        <div class="article-card is">
+            <span class="tag">İş Hukuku</span>
+            <h4>İhbar Tazminatı Şartları</h4>
+            <p>İşten ayrılma bildirim süreleri ve ihbar tazminatı hak edişi.</p>
+            <a href="makaleler/is-hukuku/ihbar-tazminati-nedir.html">Makaleyi Oku →</a>
+        </div>
+        <div class="article-card is">
+            <span class="tag">İş Hukuku</span>
+            <h4>İşe İade Davası Açma</h4>
+            <p>Haksız fesih sonrası işe iade davası açmak için gerekli kriterler.</p>
+            <a href="makaleler/is-hukuku/ise-iade-davasi.html">Makaleyi Oku →</a>
+        </div>
+        <div class="article-card is">
+            <span class="tag">İş Hukuku</span>
+            <h4>Fazla Mesai Ücreti Hakları</h4>
+            <p>Haftalık 45 saati aşan çalışmaların ücretlendirilmesi ve ispatı.</p>
+            <a href="makaleler/is-hukuku/fazla-mesai-ucreti.html">Makaleyi Oku →</a>
+        </div>
+        <div class="article-card is">
+            <span class="tag">İş Hukuku</span>
+            <h4>Mobbing Nedir?</h4>
+            <p>İş yerinde psikolojik tacize karşı işçinin sahip olduğu yasal haklar.</p>
+            <a href="makaleler/is-hukuku/mobbing-haklari.html">Makaleyi Oku →</a>
+        </div>
 
-  <div class="article-card">
-    <span class="tag">Borclar Hukuku</span>
-    <h4>Alacak Davası ve İcra Takibi Farkı</h4>
-    <p>Alacak Davası ve İcra Takibi Arasındaki Farklar</p>
-    <a href="makaleler/borclar-hukuku/alacak-davasi-ve-icra-takibi-farklari.html">
-      Devamını Oku →
-    </a>
-  </div>
-<div class="article-card">
-    <span class="tag">Miras Hukuku</span>
-    <h4>Miras Paylaşımı Nasıl Yapılır?</h4>
-    <p>Mirasçıların hakları ve paylaşım süreci.</p>
-    <a href="makaleler/miras-hukuku/miras-paylasimi.html">
-      Devamını Oku →
-    </a>
-  </div>
-	<div class="article-card">
-    <span class="tag">Miras Hukuku</span>
-    <h4>Miras Paylaşımı Nasıl Yapılır?</h4>
-    <p>Mirasçıların hakları ve paylaşım süreci.</p>
-    <a href="makaleler/miras-hukuku/miras-paylasimi.html">
-      Devamını Oku →
-    </a>
-  </div>
-	<div class="article-card">
-    <span class="tag">Miras Hukuku</span>
-    <h4>Miras Paylaşımı Nasıl Yapılır?</h4>
-    <p>Mirasçıların hakları ve paylaşım süreci.</p>
-    <a href="makaleler/miras-hukuku/miras-paylasimi.html">
-      Devamını Oku →
-    </a>
-  </div>
-</div>
-   <!-- TAZMİNAT -->
-    <div class="category">
-      <h3>Tazminat Hukuku</h3>
+        <div class="article-card miras">
+            <span class="tag">Miras Hukuku</span>
+            <h4>Miras Paylaşımı Nasıl Yapılır?</h4>
+            <p>Yasal mirasçılar ve miras pay oranlarının hesaplanması.</p>
+            <a href="makaleler/miras-hukuku/miras-paylasimi.html">Makaleyi Oku →</a>
+        </div>
+        <div class="article-card miras">
+            <span class="tag">Gayrimenkul Hukuku</span>
+            <h4>Tapu İptal ve Tescil</h4>
+            <p>Hukuka aykırı düzenlenen tapu kayıtlarının düzeltilmesi davaları.</p>
+            <a href="makaleler/gayrimenkul-hukuku/tapu-iptal-ve-tescil-davasi.html">Makaleyi Oku →</a>
+        </div>
+        <div class="article-card miras">
+            <span class="tag">Gayrimenkul Hukuku</span>
+            <h4>Ortaklığın Giderilmesi</h4>
+            <p>Paylı mülkiyetin sona erdirilmesi (İzale-i Şuyu) süreci.</p>
+            <a href="makaleler/gayrimenkul-hukuku/ortakligin-giderilmesi.html">Makaleyi Oku →</a>
+        </div>
+        <div class="article-card miras">
+            <span class="tag">Miras Hukuku</span>
+            <h4>Vasiyetname Düzenleme</h4>
+            <p>Noter huzurunda veya el yazılı vasiyetname hazırlamanın şartları.</p>
+            <a href="makaleler/miras-hukuku/vasiyetname-nasil-yapilir.html">Makaleyi Oku →</a>
+        </div>
+        <div class="article-card miras">
+            <span class="tag">Miras Hukuku</span>
+            <h4>Veraset İlamı Alınması</h4>
+            <p>Mirasçılık belgesinin e-devlet veya noterden alınma süreci.</p>
+            <a href="makaleler/miras-hukuku/veraset-ilami.html">Makaleyi Oku →</a>
+        </div>
 
-      <div class="article-card">
-        <span class="tag">Tazminat Hukuku</span>
-        <h4>Hasar Danışmanlık Şirketi Mağduru Olmayın.</h4>
-        <p>Hasar danışmanlığı kavramı, riskleri ve hukuki çözüm yolları.</p>
-        <a href="makaleler/tazminat-hukuku/hasar-danismanlik-sirketlerinin-magduru-olmayin.html">
-          Devamını Oku →
-        </a>
-      </div>
-		<div class="article-card">
-        <span class="tag">Tazminat Hukuku</span>
-        <h4>Aracınıza Kasko Poliçesi Yaptırmak</h4>
-        <p>Kasko poliçesi yaptırırken nelere dikkat edilmeli</p>
-        <a href="makaleler/tazminat-hukuku/aracınıza-kasko-policesi-yaptırırken-nelere-dikkat-etmelisiniz.html">
-          Devamını Oku →
-        </a>
-      </div>
-		<div class="article-card">
-        <span class="tag">Ceza Hukuku</span>
-        <h4>İfade Verirken Nelere Dikkat Edilmelidir?</h4>
-        <p>Ceza soruşturmasının en kritik aşamalarından biri ifade alma sürecidir.</p>
-        <a href="makaleler/ceza-hukuku/ifade-verme-rehberi.html">
-          Devamını Oku →
-        </a>
-      </div>
-		<div class="article-card">
-        <span class="tag">Ceza Hukuku</span>
-        <h4>Gözaltı ile Tutuklamanın Farkı?</h4>
-        <p>Her iki koruma tedbiri de kişi özgürlüğünü sınırlandırır ancak hukuki nitelikleri ve sonuçları tamamen farklıdır.</p>
-        <a href="makaleler/ceza-hukuku/gozalti-ve-tutuklama-farki.html">
-          Devamını Oku →
-        </a>
-      </div>
-		<div class="article-card">
-        <span class="tag">Ceza Hukuku</span>
-        <h4>Gözaltı Süresi Ne Kadardır?</h4>
-        <p>Ceza Muhakemesi Kanunu’na göre, normal şartlarda gözaltı süresi en fazla 24 saattir</p>
-        <a href="makaleler/ceza-hukuku/gozalti-suresi.html">
-          Devamını Oku →
-        </a>
-      </div>
+        <div class="article-card borclar">
+            <span class="tag">Borçlar Hukuku</span>
+            <h4>Alacak Davası Nedir?</h4>
+            <p>Ödenmeyen borçların mahkeme yoluyla tahsil edilmesi süreci.</p>
+            <a href="makaleler/borclar-hukuku/alacak-davasi-nedir.html">Makaleyi Oku →</a>
+        </div>
+        <div class="article-card borclar">
+            <span class="tag">Borçlar Hukuku</span>
+            <h4>İcra Takibi ve İtiraz</h4>
+            <p>İlamsız icra takiplerinde ödeme emrine itiraz usulü.</p>
+            <a href="makaleler/borclar-hukuku/icra-takibi-itiraz.html">Makaleyi Oku →</a>
+        </div>
+        <div class="article-card borclar">
+            <span class="tag">Borçlar Hukuku</span>
+            <h4>Tahliye Taahhütnamesi</h4>
+            <p>Kira hukukunda tahliye taahhütnamesinin geçerlilik şartları.</p>
+            <a href="makaleler/borclar-hukuku/tahliye-taahhutnamesi.html">Makaleyi Oku →</a>
+        </div>
+        <div class="article-card borclar">
+            <span class="tag">Borçlar Hukuku</span>
+            <h4>Sözleşme Feshi Hakları</h4>
+            <p>Hukuki sözleşmelerin tek taraflı feshedilme şartları ve sonuçları.</p>
+            <a href="makaleler/borclar-hukuku/sozlesme-feshi.html">Makaleyi Oku →</a>
+        </div>
+        <div class="article-card borclar">
+            <span class="tag">Borçlar Hukuku</span>
+            <h4>Sebepsiz Zenginleşme</h4>
+            <p>Hukuki bir neden olmaksızın başkasının mal varlığından elde edilen kazancın iadesi.</p>
+            <a href="makaleler/borclar-hukuku/sebepsiz-zenginlesme.html">Makaleyi Oku →</a>
+        </div>
+
+        <div class="article-card tazminat">
+            <span class="tag">Tazminat Hukuku</span>
+            <h4>Hasar Danışmanlık Riskleri</h4>
+            <p>Sigorta süreçlerinde avukat dışı aracılarla çalışmanın doğurduğu riskler.</p>
+            <a href="makaleler/tazminat-hukuku/hasar-danismanlik-magduru-olmayin.html">Makaleyi Oku →</a>
+        </div>
+        <div class="article-card tazminat">
+            <span class="tag">Tazminat Hukuku</span>
+            <h4>Kasko Poliçesi Hakları</h4>
+            <p>Kaza sonrası kasko sigortasından tazminat alma süreci.</p>
+            <a href="makaleler/tazminat-hukuku/aracınıza-kasko-policesi-yaptırırken-nelere-dikkat-etmelisiniz.html">Makaleyi Oku →</a>
+        </div>
+        <div class="article-card tazminat">
+            <span class="tag">Tazminat Hukuku</span>
+            <h4>Manevi Tazminat Davası</h4>
+            <p>Kişilik haklarına saldırı veya elem/keder nedeniyle açılan davalar.</p>
+            <a href="makaleler/tazminat-hukuku/manevi-tazminat.html">Makaleyi Oku →</a>
+        </div>
+        <div class="article-card tazminat">
+            <span class="tag">Tazminat Hukuku</span>
+            <h4>Trafik Kazası Tazminatı</h4>
+            <p>Yaralanmalı veya ölümlü trafik kazalarında tazminat kalemleri.</p>
+            <a href="makaleler/tazminat-hukuku/trafik-kazasi-tazminati.html">Makaleyi Oku →</a>
+        </div>
+        <div class="article-card tazminat">
+            <span class="tag">Tazminat Hukuku</span>
+            <h4>Araç Değer Kaybı</h4>
+            <p>Kaza sonrası onarılan aracın piyasa değerindeki düşüşün tahsili.</p>
+            <a href="makaleler/tazminat-hukuku/arac-deger-kaybi.html">Makaleyi Oku →</a>
+        </div>
+
     </div>
-  </section>
-
 </div>
 
-<footer>
-  <p>© Salgür Hukuk & Danışmanlık • Uşak</p>
-</footer>
+<footer><p>© Salgür Hukuk & Danışmanlık • Uşak</p></footer>
+
+<script>
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("article-card");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    x[i].classList.remove("show");
+    if (x[i].className.indexOf(c) > -1) {
+        x[i].classList.add("show");
+    }
+  }
+  
+  // Aktif buton seçimi
+  var btns = document.getElementsByClassName("filter-btn");
+  for (var j = 0; j < btns.length; j++) {
+      btns[j].classList.remove("active");
+  }
+  if(event) event.currentTarget.classList.add("active");
+}
+
+// İlk açılışta hepsini göster
+filterSelection('all');
+</script>
 
 </body>
 </html>
