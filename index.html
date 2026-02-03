@@ -134,9 +134,47 @@ footer a{color:#c7a44a;transition:color .3s}
 footer a:hover{color:#fff}
 
 /* --- Responsive --- */
+/* --- Profesyonel Mobil Düzenleme --- */
 @media(max-width:768px){
-  header .container{flex-direction:column;gap:15px}
-  .hero{padding:50px 20px}
+    /* Konteynır boşluklarını daralt */
+    .container { padding: 30px 15px; }
+    
+    /* Header (Logo ve Menü) düzeni */
+    header .container { 
+        flex-direction: column; 
+        gap: 12px; 
+        padding: 15px 10px;
+    }
+    header h1 { font-size: 20px; }
+    nav { 
+        display: flex; 
+        flex-wrap: wrap; 
+        justify-content: center; 
+        gap: 10px; 
+    }
+    nav a { margin: 0; font-size: 14px; }
+
+    /* Ana Başlık Ayarı - Taşmayı Önler */
+    .about-seo-final h1 { 
+        font-size: 28px !important; 
+        line-height: 1.2 !important; 
+    }
+    
+    /* Beyaz Alanın İç Boşluğunu Azalt */
+    .about-seo-final div[style*="padding: 0 50px 60px 50px"] {
+        padding: 20px 15px 30px 15px !important;
+    }
+
+    /* Hizmet kutularını tam genişlik yap */
+    .services, .articles-grid { 
+        grid-template-columns: 1fr; 
+        gap: 20px; 
+    }
+    
+    .hero h2 { font-size: 30px; }
+    
+    /* Yazı hizalamalarını düzelt */
+    p { font-size: 15px; text-align: left !important; }
 }
 </style>
 </head>
