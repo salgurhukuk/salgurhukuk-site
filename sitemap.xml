@@ -1,100 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-<url><loc>https://salgurhukuk.com/</loc><priority>1.00</priority></url>
-<url><loc>https://salgurhukuk.com/cerez-politikasi.html</loc><priority>0.30</priority></url>
-<url><loc>https://salgurhukuk.com/makaleler.html</loc><priority>0.80</priority></url>
-<url><loc>https://salgurhukuk.com/hakkimizda.html</loc><priority>0.70</priority></url>
-<url><loc>https://salgurhukuk.com/iletisim.html</loc><priority>0.70</priority></url>
-<url><loc>https://salgurhukuk.com/bosanma-hukuku.html</loc><priority>0.90</priority></url>
-<url><loc>https://salgurhukuk.com/idare-hukuku.html</loc><priority>0.90</priority></url>
-<url><loc>https://salgurhukuk.com/ceza-hukuku.html</loc><priority>0.90</priority></url>
-<url><loc>https://salgurhukuk.com/is-hukuku.html</loc><priority>0.90</priority></url>
-<url><loc>https://salgurhukuk.com/borclar-hukuku.html</loc><priority>0.90</priority></url>
-<url><loc>https://salgurhukuk.com/tazminat-hukuku.html</loc><priority>0.90</priority></url>
-<url><loc>https://salgurhukuk.com/gayrimenkul-ve-miras-hukuku.html</loc><priority>0.90</priority></url>
-<url><loc>https://salgurhukuk.com/usak-avukat.html</loc><priority>0.90</priority></url>
-<url><loc>https://salgurhukuk.com/usak-bosanma-avukati.html</loc><priority>0.85</priority></url>
-<url><loc>https://salgurhukuk.com/usak-ceza-avukati.html</loc><priority>0.85</priority></url>
-<url><loc>https://salgurhukuk.com/usak-is-hukuku-avukati.html</loc><priority>0.85</priority></url>
-<url><loc>https://salgurhukuk.com/usak-idare-hukuku-avukati.html</loc><priority>0.85</priority></url>
-<url><loc>https://salgurhukuk.com/usak-tazminat-hukuku-avukati.html</loc><priority>0.85</priority></url>
-<url><loc>https://salgurhukuk.com/usak-gayrimenkul-ve-miras-avukati.html</loc><priority>0.85</priority></url>
-<url><loc>https://salgurhukuk.com/usak-borclar-hukuku-avukati.html</loc><priority>0.85</priority></url>
-<url><loc>https://salgurhukuk.com/karahalli-avukat.html</loc><priority>0.80</priority></url>
-<url><loc>https://salgurhukuk.com/karahalli-bosanma-avukati.html</loc><priority>0.75</priority></url>
-<url><loc>https://salgurhukuk.com/karahalli-ceza-avukati.html</loc><priority>0.75</priority></url>
-<url><loc>https://salgurhukuk.com/karahalli-is-hukuku-avukati.html</loc><priority>0.75</priority></url>
-<url><loc>https://salgurhukuk.com/karahalli-gayrimenkul-ve-miras-avukati.html</loc><priority>0.75</priority></url>
-<url><loc>https://salgurhukuk.com/karahalli-borclar-hukuku-avukati.html</loc><priority>0.75</priority></url>
-<url><loc>https://salgurhukuk.com/karahalli-tazminat-hukuku-avukati.html</loc><priority>0.75</priority></url>
-<url><loc>https://salgurhukuk.com/sivasli-avukat.html</loc><priority>0.80</priority></url>
-<url><loc>https://salgurhukuk.com/sivasli-bosanma-avukati.html</loc><priority>0.75</priority></url>
-<url><loc>https://salgurhukuk.com/sivasli-ceza-avukati.html</loc><priority>0.75</priority></url>
-<url><loc>https://salgurhukuk.com/sivasli-is-hukuku-avukati.html</loc><priority>0.75</priority></url>
-<url><loc>https://salgurhukuk.com/sivasli-gayrimenkul-ve-miras-avukati.html</loc><priority>0.75</priority></url>
-<url><loc>https://salgurhukuk.com/sivasli-borclar-hukuku-avukati.html</loc><priority>0.75</priority></url>
-<url><loc>https://salgurhukuk.com/sivasli-tazminat-hukuku-avukati.html</loc><priority>0.75</priority></url>
-<url><loc>https://salgurhukuk.com/makaleler/bosanma-hukuku/anlasmali-bosanma-sartlari.html</loc><priority>0.64</priority></url>
-<url><loc>https://salgurhukuk.com/makaleler/bosanma-hukuku/cekismeli-bosanma.html</loc><priority>0.64</priority></url>
-<url><loc>https://salgurhukuk.com/makaleler/bosanma-hukuku/velayet-kime-verilir.html</loc><priority>0.64</priority></url>
-<url><loc>https://salgurhukuk.com/makaleler/bosanma-hukuku/nafaka-turleri.html</loc><priority>0.64</priority></url>
-<url><loc>https://salgurhukuk.com/makaleler/bosanma-hukuku/mal-paylasimi-davasi.html</loc><priority>0.64</priority></url>
-<url><loc>https://salgurhukuk.com/makaleler/ceza-hukuku/tutuklamaya-itiraz.html</loc><priority>0.64</priority></url>
-<url><loc>https://salgurhukuk.com/makaleler/ceza-hukuku/adli-kontrol-nedir.html</loc><priority>0.64</priority></url>
-<url><loc>https://salgurhukuk.com/makaleler/ceza-hukuku/ifade-verme-rehberi.html</loc><priority>0.64</priority></url>
-<url><loc>https://salgurhukuk.com/makaleler/ceza-hukuku/gozalti-ve-tutuklama-farki.html</loc><priority>0.64</priority></url>
-<url><loc>https://salgurhukuk.com/makaleler/ceza-hukuku/gozalti-suresi.html</loc><priority>0.64</priority></url>
-<url><loc>https://salgurhukuk.com/makaleler/is-hukuku/kidem-tazminati-hesaplama.html</loc><priority>0.64</priority></url>
-<url><loc>https://salgurhukuk.com/makaleler/is-hukuku/ihbar-tazminati-nedir.html</loc><priority>0.64</priority></url>
-<url><loc>https://salgurhukuk.com/makaleler/is-hukuku/ise-iade-davasi.html</loc><priority>0.64</priority></url>
-<url><loc>https://salgurhukuk.com/makaleler/is-hukuku/fazla-mesai-ucreti-hesaplama.html</loc><priority>0.64</priority></url>
-<url><loc>https://salgurhukuk.com/makaleler/is-hukuku/hakli-fesih-nedir.html</loc><priority>0.64</priority></url>
-<url><loc>https://salgurhukuk.com/makaleler/gayrimenkul-hukuku/tapu-iptal-ve-tescil-davasi.html</loc><priority>0.64</priority></url>
-<url><loc>https://salgurhukuk.com/makaleler/gayrimenkul-hukuku/ortakligin-giderilmesi-izale-i-suyu.html</loc><priority>0.64</priority></url>
-<url><loc>https://salgurhukuk.com/makaleler/gayrimenkul-hukuku/ortakligin-giderilmesi-davalarinda-tebligat-sorunlari.html</loc><priority>0.64</priority></url>
-<url><loc>https://salgurhukuk.com/makaleler/miras-hukuku/veraset-ilami.html</loc><priority>0.64</priority></url>
-<url><loc>https://salgurhukuk.com/makaleler/miras-hukuku/vasiyetname-nasil-yapilir.html</loc><priority>0.64</priority></url>
-<url><loc>https://salgurhukuk.com/makaleler/miras-hukuku/muris-muvazaasi.html</loc><priority>0.64</priority></url>
-<url><loc>https://salgurhukuk.com/makaleler/miras-hukuku/miras-paylasimi.html</loc><priority>0.64</priority></url>
-<url><loc>https://salgurhukuk.com/makaleler/miras-hukuku/vasiyetname-nasil-yapilir.html</priority>0.64</url>
-<url><loc>https://salgurhukuk.com/makaleler/miras-hukuku/veraset-ilami.html</priority>0.64</url>
-<url><loc>https://salgurhukuk.com/makaleler/tazminat-hukuku/tazminat-hukuku-nedir.html</priority>0.64</url>
-<url><loc>https://salgurhukuk.com/makaleler/tazminat-hukuku/tazminat-davalarinda-zamanasimi.html</priority>0.64</url>
-<url><loc>https://salgurhukuk.com/makaleler/tazminat-hukuku/hasar-danismanlik-sirketlerinin-magduru-olmayin.html</priority>0.64</url>
-<url><loc>https://salgurhukuk.com/makaleler/tazminat-hukuku/araciniza-kasko-policesi-yaptirirken-nelere-dikkat-etmelisiniz.html</priority>0.64</url>
-<url><loc>https://salgurhukuk.com/makaleler/tazminat-hukuku/manevi-tazminat-nedir.html</priority>0.64</url>
-<url><loc>https://salgurhukuk.com/makaleler/tazminat-hukuku/trafik-kazasi-sonrasi-tazminat-haklari.html</priority>0.64</url>
-<url><loc>https://salgurhukuk.com/makaleler/tazminat-hukuku/maddi-tazminat-nedir.html</priority>0.64</url>
-<url><loc>https://salgurhukuk.com/makaleler/tazminat-hukuku/tazminat-davasi-nasil-acilir.html</priority>0.64</url>
-<url><loc>https://salgurhukuk.com/makaleler/borclar-hukuku/alacak-davasi-nedir.html</loc><priority>0.64</priority></url>
-<url><loc>https://salgurhukuk.com/makaleler/borclar-hukuku/alacak-davasi-nedir.html</priority>0.64</url>
-<url><loc>https://salgurhukuk.com/makaleler/borclar-hukuku/alacak-davasi-ve-icra-takibi.html</priority>0.64</url>
-<url><loc>https://salgurhukuk.com/makaleler/borclar-hukuku/zamanasimi-ve-hak-dusurucu-sureler.html</priority>0.64</url>
-<url><loc>https://salgurhukuk.com/makaleler/borclar-hukuku/borcun-ifasi-ve-temerrut.html</priority>0.64</url>
-<url><loc>https://salgurhukuk.com/makaleler/borclar-hukuku/sebepsiz-zenginlesme-davasi.html</priority>0.64</url>
-<url><loc>https://salgurhukuk.com/makaleler/idare-hukuku/yurutmenin-durdurulmasi-talebi-nasil-hazirlanir.html</priority>0.64</url>
-<url><loc>https://salgurhukuk.com/makaleler/idare-hukuku/iptal-davasi-nedir-nasil-acilir.html</priority>0.64</url>
-<url><loc>https://salgurhukuk.com/makaleler/idare-hukuku/idari-dava-acma-sureleri.html</priority>0.64</url>
-<url><loc>https://salgurhukuk.com/makaleler/idare-hukuku/memur-disiplin-cezasina-karsi-dava.html</priority>0.64</url>
-<url><loc>https://salgurhukuk.com/makaleler/idare-hukuku/tam-yargi-davasi-nedir.html</priority>0.64</url>
-<url><loc>https://salgurhukuk.com/makaleler/idare-hukuku/yurutmenin-durdurulmasi-reddi.html</priority>0.64</url>
-<url><loc>https://salgurhukuk.com/makaleler/idare-hukuku/idari-para-cezasina-karsi-dava.html</priority>0.64</url>
-</urlset>
+  <url><loc>https://salgurhukuk.com/</loc><priority>1.00</priority></url>
 
+  <url><loc>https://salgurhukuk.com/makaleler.html</loc><priority>0.80</priority></url>
+  <url><loc>https://salgurhukuk.com/hakkimizda.html</loc><priority>0.70</priority></url>
+  <url><loc>https://salgurhukuk.com/iletisim.html</loc><priority>0.70</priority></url>
+  <url><loc>https://salgurhukuk.com/cerez-politikasi.html</loc><priority>0.30</priority></url>
 
+  <url><loc>https://salgurhukuk.com/bosanma-hukuku.html</loc><priority>0.90</priority></url>
+  <url><loc>https://salgurhukuk.com/idare-hukuku.html</loc><priority>0.90</priority></url>
+  <url><loc>https://salgurhukuk.com/ceza-hukuku.html</loc><priority>0.90</priority></url>
+  <url><loc>https://salgurhukuk.com/is-hukuku.html</loc><priority>0.90</priority></url>
+  <url><loc>https://salgurhukuk.com/borclar-hukuku.html</loc><priority>0.90</priority></url>
+  <url><loc>https://salgurhukuk.com/tazminat-hukuku.html</loc><priority>0.90</priority></url>
+  <url><loc>https://salgurhukuk.com/gayrimenkul-ve-miras-hukuku.html</loc><priority>0.90</priority></url>
 
+  <url><loc>https://salgurhukuk.com/usak-avukat.html</loc><priority>0.90</priority></url>
+  <url><loc>https://salgurhukuk.com/usak-bosanma-avukati.html</loc><priority>0.85</priority></url>
+  <url><loc>https://salgurhukuk.com/usak-ceza-avukati.html</loc><priority>0.85</priority></url>
+  <url><loc>https://salgurhukuk.com/usak-is-hukuku-avukati.html</loc><priority>0.85</priority></url>
+  <url><loc>https://salgurhukuk.com/usak-idare-hukuku-avukati.html</loc><priority>0.85</priority></url>
+  <url><loc>https://salgurhukuk.com/usak-tazminat-hukuku-avukati.html</loc><priority>0.85</priority></url>
+  <url><loc>https://salgurhukuk.com/usak-gayrimenkul-ve-miras-avukati.html</loc><priority>0.85</priority></url>
+  <url><loc>https://salgurhukuk.com/usak-borclar-hukuku-avukati.html</loc><priority>0.85</priority></url>
 
+  <url><loc>https://salgurhukuk.com/karahalli-avukat.html</loc><priority>0.80</priority></url>
+  <url><loc>https://salgurhukuk.com/karahalli-bosanma-avukati.html</loc><priority>0.75</priority></url>
+  <url><loc>https://salgurhukuk.com/karahalli-ceza-avukati.html</loc><priority>0.75</priority></url>
+  <url><loc>https://salgurhukuk.com/karahalli-is-hukuku-avukati.html</loc><priority>0.75</priority></url>
+  <url><loc>https://salgurhukuk.com/karahalli-gayrimenkul-ve-miras-avukati.html</loc><priority>0.75</priority></url>
+  <url><loc>https://salgurhukuk.com/karahalli-borclar-hukuku-avukati.html</loc><priority>0.75</priority></url>
+  <url><loc>https://salgurhukuk.com/karahalli-tazminat-hukuku-avukati.html</loc><priority>0.75</priority></url>
+  <url><loc>https://salgurhukuk.com/sivasli-avukat.html</loc><priority>0.80</priority></url>
+  <url><loc>https://salgurhukuk.com/sivasli-bosanma-avukati.html</loc><priority>0.75</priority></url>
+  <url><loc>https://salgurhukuk.com/sivasli-ceza-avukati.html</loc><priority>0.75</priority></url>
+  <url><loc>https://salgurhukuk.com/sivasli-is-hukuku-avukati.html</loc><priority>0.75</priority></url>
+  <url><loc>https://salgurhukuk.com/sivasli-gayrimenkul-ve-miras-avukati.html</loc><priority>0.75</priority></url>
+  <url><loc>https://salgurhukuk.com/sivasli-borclar-hukuku-avukati.html</loc><priority>0.75</priority></url>
+  <url><loc>https://salgurhukuk.com/sivasli-tazminat-hukuku-avukati.html</loc><priority>0.75</priority></url>
 
+  <url><loc>https://salgurhukuk.com/makaleler/bosanma-hukuku/anlasmali-bosanma-sartlari.html</loc><priority>0.64</priority></url>
+  <url><loc>https://salgurhukuk.com/makaleler/bosanma-hukuku/cekismeli-bosanma.html</loc><priority>0.64</priority></url>
+  <url><loc>https://salgurhukuk.com/makaleler/bosanma-hukuku/velayet-kime-verilir.html</loc><priority>0.64</priority></url>
+  <url><loc>https://salgurhukuk.com/makaleler/bosanma-hukuku/nafaka-turleri.html</loc><priority>0.64</priority></url>
+  <url><loc>https://salgurhukuk.com/makaleler/bosanma-hukuku/mal-paylasimi-davasi.html</loc><priority>0.64</priority></url>
 
+  <url><loc>https://salgurhukuk.com/makaleler/ceza-hukuku/tutuklamaya-itiraz.html</loc><priority>0.64</priority></url>
+  <url><loc>https://salgurhukuk.com/makaleler/ceza-hukuku/adli-kontrol-nedir.html</loc><priority>0.64</priority></url>
+  <url><loc>https://salgurhukuk.com/makaleler/ceza-hukuku/ifade-verme-rehberi.html</loc><priority>0.64</priority></url>
+  <url><loc>https://salgurhukuk.com/makaleler/ceza-hukuku/gozalti-ve-tutuklama-farki.html</loc><priority>0.64</priority></url>
+  <url><loc>https://salgurhukuk.com/makaleler/ceza-hukuku/gozalti-suresi.html</loc><priority>0.64</priority></url>
 
+  <url><loc>https://salgurhukuk.com/makaleler/is-hukuku/kidem-tazminati-hesaplama.html</loc><priority>0.64</priority></url>
+  <url><loc>https://salgurhukuk.com/makaleler/is-hukuku/ihbar-tazminati-nedir.html</loc><priority>0.64</priority></url>
+  <url><loc>https://salgurhukuk.com/makaleler/is-hukuku/ise-iade-davasi.html</loc><priority>0.64</priority></url>
+  <url><loc>https://salgurhukuk.com/makaleler/is-hukuku/fazla-mesai-ucreti-hesaplama.html</loc><priority>0.64</priority></url>
+  <url><loc>https://salgurhukuk.com/makaleler/is-hukuku/hakli-fesih-nedir.html</loc><priority>0.64</priority></url>
 
+  <url><loc>https://salgurhukuk.com/makaleler/gayrimenkul-hukuku/tapu-iptal-ve-tescil-davasi.html</loc><priority>0.64</priority></url>
+  <url><loc>https://salgurhukuk.com/makaleler/gayrimenkul-hukuku/ortakligin-giderilmesi-izale-i-suyu.html</loc><priority>0.64</priority></url>
+  <url><loc>https://salgurhukuk.com/makaleler/gayrimenkul-hukuku/ortakligin-giderilmesi-davalarinda-tebligat-sorunlari.html</loc><priority>0.64</priority></url>
+  <url><loc>https://salgurhukuk.com/makaleler/miras-hukuku/veraset-ilami.html</loc><priority>0.64</priority></url>
+  <url><loc>https://salgurhukuk.com/makaleler/miras-hukuku/vasiyetname-nasil-yapilir.html</loc><priority>0.64</priority></url>
+  <url><loc>https://salgurhukuk.com/makaleler/miras-hukuku/muris-muvazaasi.html</loc><priority>0.64</priority></url>
+  <url><loc>https://salgurhukuk.com/makaleler/miras-hukuku/miras-paylasimi.html</loc><priority>0.64</priority></url>
 
-
-
-
-
-
-
-
-
+  <url><loc>https://salgurhukuk.com/makaleler/tazminat-hukuku/tazminat-hukuku-nedir.html</loc><priority>0.64</priority></url>
+  <url><loc>https://salgurhukuk.com/makaleler/tazminat-hukuku/tazminat-davalarinda-zamanasimi.html</loc><priority>0.64</priority></url>
+  <url><loc>https://salgurhukuk.com/makaleler/tazminat-hukuku/hasar-danismanlik-sirketlerinin-magduru-olmayin.html</loc><priority>0.64</priority></url>
+  <url><loc>
