@@ -13,13 +13,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="icon" type="image/png" href="images/favicon.png">
-
 <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-
 <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-
-<link rel="icon" type="image/png" sizes="192x192" href="images/android-chrome-192x192.png">
 <link rel="manifest" href="images/site.webmanifest">
 
 <meta name="theme-color" content="#0b1324">
@@ -52,27 +48,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     "reviewCount": "42",
     "bestRating": "5",
     "worstRating": "1"
-  },
-  "review": [
-    {
-      "@type": "Review",
-      "reviewBody": "Boşanma sürecinde tüm aşamalar açık ve anlaşılır şekilde anlatıldı. Hukuki destek süreci güven vericiydi.",
-      "author": { "@type": "Person", "name": "Bir Müvekkil" },
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5"
-      }
-    },
-    {
-      "@type": "Review",
-      "reviewBody": "Ceza dosyasıyla ilgili süreç profesyonelce yürütüldü ve düzenli bilgilendirme yapıldı.",
-      "author": { "@type": "Person", "name": "Bir Müvekkil" },
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5"
-      }
-    }
-  ]
+  }
 }
 </script>
 
@@ -80,461 +56,212 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 /* --- Genel Ayarlar --- */
 body{margin:0;font-family:'Inter',sans-serif;background:#f9fafb;color:#2c2c2c;line-height:1.7}
 a{text-decoration:none;color:inherit}
-.container{max-width:1200px;margin:auto;padding:70px 20px}
+.container{max-width:1200px;margin:auto;padding:30px 20px}
 h2,h3{font-family:'Playfair Display',serif}
 
 /* --- Header --- */
 header{background:#0b1324;color:#fff;position:sticky;top:0;z-index:99;box-shadow:0 4px 12px rgba(0,0,0,.1);}
-header .container{display:flex;justify-content:space-between;align-items:center;padding:20px 20px}
+header .container{display:flex;justify-content:space-between;align-items:center;padding:12px 20px}
 header h1{margin:0;font-size:28px;font-weight:700}
 nav a{color:#c7a44a;margin-left:25px;font-weight:500;transition:color .3s}
 nav a:hover{color:#fff}
 
-/* --- Hero --- */
-.hero{background:#fff;border-radius:20px;padding:80px 30px;text-align:center;box-shadow:0 15px 40px rgba(0,0,0,.08);transition:transform .3s}
-.hero:hover{transform:translateY(-4px)}
-.hero h2{font-size:46px;color:#0b1324;margin-bottom:20px}
-.hero p{max-width:800px;margin:20px auto;font-size:17px;line-height:1.9;color:#444}
-.hero a{display:inline-block;margin-top:25px;padding:16px 40px;background:#c7a44a;color:#0b1324;border-radius:50px;font-weight:600;transition:background .3s}
-.hero a:hover{background:#b8943f;color:#fff}
+/* --- Servisler ve Makaleler --- */
+.article-box, .location, .service { transition: transform .3s, box-shadow .3s; }
+.article-box:hover, .location:hover, .service:hover { transform: translateY(-5px); box-shadow: 0 15px 40px rgba(0,0,0,.08); }
 
-/* --- Uzmanlık Alanları --- */
-.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px;margin-top:80px}
-.service{background:#fff;padding:35px;border-radius:18px;border-left:6px solid #c7a44a;box-shadow:0 10px 30px rgba(0,0,0,.05);transition:transform .3s,box-shadow .3s}
-.service:hover{transform:translateY(-5px);box-shadow:0 15px 40px rgba(0,0,0,.08)}
-.service h3{font-size:22px;margin-bottom:12px}
-.service p{color:#555;margin-bottom:15px}
-.service a{color:#0b1324;font-weight:600;transition:color .3s}
-.service a:hover{color:#c7a44a}
-
-/* --- Öne Çıkan Makaleler (Bozulmayı Önleyen Düzenleme) --- */
-.latest-articles {
-    background: #fff;
-    padding: 30px 20px; /* Üst-alt boşluk iyice daraltıldı */
-    margin-top: 0px !important; /* Bir üst bölümle olan mesafe sıfırlandı */
+/* --- Neden Salgür Kartları (Efekt Eklendi) --- */
+.why-card {
+    background: #fff; padding: 40px 30px; border-radius: 15px; border-top: 5px solid #c7a44a; 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05); text-align: center; transition: transform .3s, box-shadow .3s;
 }
-.latest-articles h2 {
-    text-align: center;
-    font-size: 38px;
-    margin-top: 0; /* Başlığın kendi tavan boşluğu silindi */
-    margin-bottom: 10px;
-    color: #0b1324;
-}
-.latest-articles .subtitle {
-    text-align: center;
-    color: #555;
-    margin-bottom: 40px;
-    font-size: 17px;
-}
-.articles-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-}
-.article-box {
-    background: #f9fafb;
-    border-radius: 18px;
-    padding: 30px;
-    box-shadow: 0 8px 25px rgba(0,0,0,.05);
-    display: flex;
-    flex-direction: column;
-    transition: transform .3s, box-shadow .3s;
-}
-.article-box:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 35px rgba(0,0,0,.08);
-}
-.article-box h3 {
-    font-size: 22px;
-    color: #0b1324;
-    margin: 12px 0;
-}
-.article-box p {
-    flex: 1;
-    color: #555;
-}
-.article-box a {
-    margin-top: 15px;
-    font-weight: 600;
-    color: #c7a44a;
-    transition: color .3s;
-}
-.article-box a:hover {
-    color: #0b1324;
-}
-
-/* --- Hizmet Bölgeleri --- */
-.locations{margin-top:90px}
-.location-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px}
-.location{background:#fff;padding:25px;border-radius:14px;text-align:center;box-shadow:0 8px 25px rgba(0,0,0,.05);transition:transform .3s}
-.location:hover{transform:translateY(-4px)}
-.location a{font-weight:600;color:#0b1324;font-size:17px}
-.location a:hover{color:#c7a44a}
-
-/* --- Footer --- */
-footer{background:#0b1324;color:#c7a44a;padding:60px 20px;margin-top:100px;text-align:center}
-footer p{font-size:14px;line-height:1.8}
-footer a{color:#c7a44a;transition:color .3s}
-footer a:hover{color:#fff}
-
-/* --- Responsive --- */
-/* --- Profesyonel Mobil Düzenleme --- */
-@media(max-width:768px){
-    /* Konteynır boşluklarını daralt */
-    .container { padding: 30px 15px; }
-    
-    /* Header (Logo ve Menü) düzeni */
-    header .container { 
-        flex-direction: column; 
-        gap: 12px; 
-        padding: 15px 10px;
-    }
-    header h1 { font-size: 20px; }
-    nav { 
-        display: flex; 
-        flex-wrap: wrap; 
-        justify-content: center; 
-        gap: 10px; 
-    }
-    nav a { margin: 0; font-size: 14px; }
-
-    /* Ana Başlık Ayarı - Taşmayı Önler */
-    .about-seo-final h1 { 
-        font-size: 28px !important; 
-        line-height: 1.2 !important; 
-    }
-    
-    /* Beyaz Alanın İç Boşluğunu Azalt */
-    .about-seo-final div[style*="padding: 0 50px 60px 50px"] {
-        padding: 20px 15px 30px 15px !important;
-    }
-
-    /* Hizmet kutularını tam genişlik yap */
-    .services, .articles-grid { 
-        grid-template-columns: 1fr; 
-        gap: 20px; 
-    }
-    
-    .hero h2 { font-size: 30px; }
-    
-    /* Yazı hizalamalarını düzelt */
-    p { font-size: 15px; text-align: left !important; }
-}
-.menu-toggle{display:none;background:none;border:none;font-size:28px;color:#c7a44a;cursor:pointer}
+.why-card:hover { transform: translateY(-5px); box-shadow: 0 15px 40px rgba(0,0,0,.1); }
 
 .dropdown{position:relative;display:inline-block}
 .dropbtn{color:#c7a44a;text-decoration:none;font-weight:500;margin-left:20px}
 .dropdown-content{display:none;position:absolute;background:#0b1324;min-width:240px;border-radius:10px;box-shadow:0 10px 25px rgba(0,0,0,.2)}
-.dropdown-content a{padding:12px 16px;display:block}
+.dropdown-content a{padding:12px 16px;display:block; border-bottom: 1px solid rgba(255,255,255,0.05);}
 .dropdown:hover .dropdown-content{display:block}
+
+.articles-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
+.article-box { background: #f9fafb; border-radius: 18px; padding: 25px; display: flex; flex-direction: column; }
+
+@media(max-width:768px){
+    header .container { flex-direction: column; gap: 10px; text-align: center; }
+    nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 10px; }
+    nav a, .dropbtn { margin-left: 0; font-size: 14px; }
+}
 </style>
 </head>
 
 <body>
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TVFZGG9C"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TVFZGG9C" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-<header>
-<div class="container">
-    <a href="index.html" style="display: flex; align-items: center; gap: 15px; text-decoration: none;">
-        <div style="font-size: 35px; color: #fff;">⚖️</div> 
-        
-        <div style="display: flex; flex-direction: column; justify-content: center;">
-            <span style="font-family:'Playfair Display',serif; font-size: 22px; font-weight: 700; color: #fff; line-height: 1.1; letter-spacing: 1px;">
-                SALGÜR
-            </span>
-            <span style="font-family:'Inter',sans-serif; font-size: 15px; font-weight: 500; color: #c7a44a; letter-spacing: 2px; margin-top: 2px;">
-                HUKUK & DANIŞMANLIK
-            </span>
+    <header>
+        <div class="container">
+            <a href="index.html" style="display: flex; align-items: center; gap: 15px;">
+                <div style="font-size: 35px; color: #fff;">⚖️</div> 
+                <div style="display: flex; flex-direction: column; justify-content: center;">
+                    <span style="font-family:'Playfair Display',serif; font-size: 22px; font-weight: 700; color: #fff; line-height: 1.1; letter-spacing: 1px;">SALGÜR</span>
+                    <span style="font-family:'Inter',sans-serif; font-size: 15px; font-weight: 500; color: #c7a44a; letter-spacing: 2px; margin-top: 2px;">HUKUK & DANIŞMANLIK</span>
+                </div>
+            </a>
+            <nav class="menu">
+                <a href="index.html">Anasayfa</a>
+                <div class="dropdown">
+                    <a href="usak-avukat.html" class="dropbtn">Hizmetler ▾</a>
+                    <div class="dropdown-content">
+                        <a href="usak-bosanma-avukati.html">Aile-Boşanma Hukuku</a>
+                        <a href="usak-borclar-hukuku-avukati.html">Borçlar Hukuku</a>
+                        <a href="usak-ceza-avukati.html">Ceza Hukuku</a>
+                        <a href="usak-gayrimenkul-ve-miras-avukati.html">Gayrimenkul ve Miras</a>
+                        <a href="usak-idare-hukuku-avukati.html">İdare Hukuku</a>
+                        <a href="usak-is-hukuku-avukati.html">İş Hukuku</a>
+                        <a href="usak-tazminat-hukuku-avukati.html">Tazminat Hukuku</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="usak-avukat.html" class="dropbtn">Uşak Avukat ▾</a>
+                    <div class="dropdown-content">
+                        <a href="karahalli-avukat.html">Karahallı Avukat</a>
+                        <a href="sivasli-avukat.html">Sivaslı Avukat</a>
+                    </div>
+                </div>
+                <a href="makaleler.html">Hukuki Makaleler</a>
+                <a href="hakkimizda.html">Hakkımızda</a>
+                <a href="iletisim.html">İletişim</a>
+            </nav>
         </div>
-    </a>
+    </header>
 
-   <nav class="menu" id="mainMenu">
-    <a href="index.html">Anasayfa</a>
-	
-	<div class="dropdown">
-        <a href="usak-avukat.html" class="dropbtn">
-            Hizmetler ▾
-        </a>
-        <div class="dropdown-content">
-            <a href="usak-bosanma-avukati.html">Aile-Boşanma Hukuku</a>
-			  <a href="usak-borclar-hukuku-avukati.html">Borçlar Hukuku</a>
-            <a href="usak-ceza-avukati.html">Ceza Hukuku</a>
-            <a href="usak-gayrimenkul-ve-miras-avukati.html">Gayrimenkul ve Miras</a>
-			<a href="usak-idare-hukuku-avukati.html">İdare Hukuku</a>
-			<a href="usak-is-hukuku-avukati.html">İş Hukuku</a>
-			<a href="usak-tazminat-hukuku-avukati.html">Tazminat Hukuku</a>
-        </div>
-	</div>
-
-    <div class="dropdown">
-        <a href="usak-avukat.html" class="dropbtn">
-            Uşak Avukat ▾
-        </a>
-        <div class="dropdown-content">
-            <a href="karahallı-avukat.html">Karahallı Avukat</a>
-            <a href="sivasli-avukat.html">Sivaslı Avukat</a>
-          
-        </div>
-    </div>
-
-    <a href="makaleler.html">Hukuki Makaleler</a>
-    <a href="hakkimizda.html">Hakkımızda</a>
-    <a href="iletisim.html">İletişim</a>
-</nav>
-
-</div>
-</header>
-<div class="container">
-
- <section class="about-seo-final" style="padding-top: 0 !important; padding-bottom: 80px; background: #f4f7f9; margin-top: 0 !important;">
-    <div class="container" style="padding-top: 0 !important; margin-top: 0 !important;">
-        
-        <div style="max-width: 1250px; margin: 0 auto; background: #ffffff; padding: 0 50px 60px 50px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border: 1px solid #dee5ed; overflow: hidden;">
-            
-            <div style="text-align: center; margin-bottom: 30px; margin-top: 20px !important; padding-top: 0 !important;">
-                <h1 style="font-family: 'Playfair Display', serif; font-size: 42px; color: #0b1324; margin-top: 0 !important; padding-top: 0 !important; margin-bottom: 10px; font-weight: 700; font-style: normal !important; text-transform: none !important; line-height: 1;">Uşak Avukat ve Hukuki Danışmanlık İşlemleri</h1>
-                <div style="width: 70px; height: 4px; background: #c7a44a; margin: 5px auto 0 auto;"></div>
+<main>
+    <section class="about-seo-final" style="padding: 30px 0; background: #f4f7f9;">
+        <div class="container">
+            <div style="max-width: 1250px; margin: 0 auto; background: #ffffff; padding: 30px 40px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border: 1px solid #dee5ed;">
+                <div style="text-align: center; margin-bottom: 25px;">
+                    <h1 style="font-family: 'Playfair Display', serif; font-size: 34px; color: #0b1324; margin-bottom: 10px; font-weight: 700;">Uşak Avukat ve Hukuki Danışmanlık İşlemleri</h1>
+                    <div style="width: 70px; height: 4px; background: #c7a44a; margin: 5px auto 0 auto;"></div>
+                </div>
+                <div style="color: #4b5563; font-size: 16px; line-height: 1.8;">
+                    <h2 style="font-size: 22px; color: #c7a44a; font-weight: 600; text-align: center; margin-bottom: 20px; font-family: 'Playfair Display', serif;">Salgür Hukuk ve Danışmanlık Bürosu: Şeffaf ve Güvenilir Çözümler</h2>
+                    <p style="text-align:justify; margin-bottom: 15px;">
+                        <strong>Uşak Barosu</strong> bünyesinde hizmet veren ofisimiz, müvekkillerine stratejik çözüm ortaklığı sunar. <strong>Uşak Avukat</strong> arayışınızda; deneyim, gizlilik ve hızlı sonuç odaklı yaklaşımımızla yanınızdayız. <strong>Uşak merkezli</strong> olarak bireysel ve kurumsal müvekkillerimize dava takibi, hukuki danışmanlık ve arabuluculuk hizmetleri sunmaktayız.
+                    </p>
+                    <p style="text-align:justify;">
+                        Hukuk sisteminde her somut olay kendine özgü şartlar taşır. Bu nedenle Salgür Hukuk, standart çözümler yerine her dosya için özel değerlendirme yaparak strateji belirler. Uşak Barosu’na kayıtlı avukatlar eşliğinde yürütülen çalışmalarımızda, güncel mevzuat ve Yargıtay içtihatları yakından takip edilerek müvekkil haklarının en etkin şekilde korunması amaçlanır.
+                    </p>
+                </div>
             </div>
+        </div>
+    </section>
 
-            <div style="margin-bottom: 40px; text-align: center;">
-                <h2 style="font-size: 24px; color: #c7a44a; font-weight: 600; letter-spacing: 0.5px; margin-bottom: 25px; font-style: normal !important; text-transform: none !important;">Salgur Hukuk ve Danışmanlım Bürosu: Şeffaf ve Güvenilir Çözümler</h2>
-                <div style="color: #4b5563; font-size: 16px; line-height: 1.8; max-width: 1000px; margin: auto;">
-					<p style="text-align:justify;"><strong>Uşak Barosu</strong> bünyesinde hizmet veren ofisimiz, müvekkillerine stratejik çözüm ortaklığı sunar. <strong>Uşak Avukat</strong> arayışınızda; deneyim, gizlilik ve hızlı sonuç odaklı yaklaşımımızla yanınızdayız. <strong>Uşak merkezli </strong> olarak bireysel ve kurumsal müvekkillerimize dava takibi, hukuki danışmanlık ve arabuluculuk hizmetleri sunmaktayız. </p>
-                    <p style="text-align:justify;">Hukuk sisteminde her somut olay kendine özgü şartlar taşır. Bu nedenle Salgür Hukuk, standart çözümler yerine her dosya için özel değerlendirme yaparak strateji belirler. Uşak Barosu’na kayıtlı avukatlar eşliğinde yürütülen çalışmalarımızda, güncel mevzuat ve Yargıtay içtihatları yakından takip edilerek müvekkil haklarının en etkin şekilde korunması amaçlanır. </p>
- </div>
- 
-<section class="latest-articles">
-    <h2>Öne Çıkan Hukuki Makaleler</h2>
-    <p class="subtitle">Miras, Boşanma ve Gayrimenkul Hukuku başta olmak üzere; Av. M. Eşref Salgür tarafından hazırlanan güncel ve bilgilendirici makaleler.</p>
+    <section class="why-salgur" style="padding: 40px 0; background: #f9fafb;">
+        <div class="container">
+            <h2 style="text-align: center; font-size: 32px; color: #0b1324; margin-bottom: 10px;">Neden Salgür Hukuk ve Danışmanlık?</h2>
+            <div style="width: 70px; height: 4px; background: #c7a44a; margin: 0 auto 30px auto;"></div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                <div class="why-card">
+                    <div style="font-size: 40px; margin-bottom: 20px;">⚖️</div>
+                    <h4 style="font-size: 20px; color: #0b1324; margin-bottom: 15px;">Şeffaf ve Etik Süreç</h4>
+                    <p style="font-size: 15px; color: #555;">Uşak Barosu ilkeleri çerçevesinde, dosyanızın her aşamasında dürüst bilgilendirme sunuyoruz.</p>
+                </div>
+                <div class="why-card">
+                    <div style="font-size: 40px; margin-bottom: 20px;">🧠</div>
+                    <h4 style="font-size: 20px; color: #0b1324; margin-bottom: 15px;">Stratejik Yaklaşım</h4>
+                    <p style="font-size: 15px; color: #555;">Güncel Yargıtay içtihatları ve somut olaya özel stratejilerle sonuca odaklanıyoruz.</p>
+                </div>
+                <div class="why-card">
+                    <div style="font-size: 40px; margin-bottom: 20px;">🔒</div>
+                    <h4 style="font-size: 20px; color: #0b1324; margin-bottom: 15px;">Tam Gizlilik</h4>
+                    <p style="font-size: 15px; color: #555;">Müvekkil mahremiyeti kapsamında tüm verilerinizi profesyonel sır olarak koruyoruz.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="articles-grid">
-        <article class="article-box">
-            <span style="color: #c7a44a; font-size: 11px; font-weight: 700; text-transform: uppercase;">Miras Hukuku</span>
-            <h3>Anne-Babaya Bakan Evladın Miras Hakkı</h3>
-            <p>Bakım vefası ve ölünceye kadar bakma sözleşmesinin miras paylaşımındaki hukuki sonuçları.</p>
-            <a href="makaleler/miras-hukuku/anne-babasina-bakan.html">Makaleyi Oku →</a>
-        </article>
+    <section class="latest-articles" style="background: #fff; padding: 40px 0; border-top: 1px solid #eee;">
+        <div class="container">
+            <h2 style="text-align: center; font-size: 34px; color: #0b1324; margin-bottom: 5px;">Öne Çıkan Hukuki Makaleler</h2>
+            <p style="text-align: center; color: #555; margin-bottom: 30px;">Miras, Boşanma ve Gayrimenkul Hukuku başta olmak üzere güncel rehberler.</p>
+            <div class="articles-grid">
+                <article class="article-box" style="border-top: 5px solid #c7a44a;">
+                    <span style="color: #c7a44a; font-size: 11px; font-weight: 700; text-transform: uppercase;">Miras Hukuku</span>
+                    <h3>Anne-Babaya Bakan Evladın Miras Hakkı</h3>
+                    <p>Bakım vefası ve ölünceye kadar bakma sözleşmesinin miras paylaşımındaki hukuki sonuçları.</p>
+                    <a href="makaleler/miras-hukuku/anne-babasina-bakan.html" style="color:#c7a44a; font-weight:600; margin-top:auto;">Makaleyi Oku →</a>
+                </article>
+                <article class="article-box" style="border-top: 5px solid #c7a44a;">
+                    <span style="color: #c7a44a; font-size: 11px; font-weight: 700; text-transform: uppercase;">Miras Hukuku</span>
+                    <h3>Mirastan Feragat Sözleşmesi ve Şartları</h3>
+                    <p>Miras bırakandan önce miras hakkından vazgeçmenin noter ve geçerlilik şartları hakkında rehber.</p>
+                    <a href="makaleler/miras-hukuku/mirastan-feragat-sozlesmesi.html" style="color:#c7a44a; font-weight:600; margin-top:auto;">Makaleyi Oku →</a>
+                </article>
+                <article class="article-box" style="border-top: 5px solid #c7a44a;">
+                    <span style="color: #c7a44a; font-size: 11px; font-weight: 700; text-transform: uppercase;">Aile Hukuku</span>
+                    <h3>Anlaşmalı Boşanma Şartları Nelerdir?</h3>
+                    <p>Anlaşmalı boşanma için gerekli koşullar, protokol düzenlenmesi ve dava süreci.</p>
+                    <a href="makaleler/bosanma-hukuku/anlasmali-bosanma-sartlari.html" style="color:#c7a44a; font-weight:600; margin-top:auto;">Devamını Oku →</a>
+                </article>
+            </div>
+            <div style="text-align:center; margin-top:30px">
+                <a href="makaleler.html" style="background:#0b1324; color:#c7a44a; padding:12px 28px; border-radius:999px; font-weight:600; display: inline-block;">Tüm Arşivi Gör</a>
+            </div>
+        </div>
+    </section>
 
-        <article class="article-box">
-            <span style="color: #c7a44a; font-size: 11px; font-weight: 700; text-transform: uppercase;">Miras Hukuku</span>
-            <h3>Mirastan Feragat Sözleşmesi ve Şartları</h3>
-            <p>Miras bırakandan önce miras hakkından vazgeçmenin noter ve geçerlilik şartları hakkında rehber.</p>
-            <a href="makaleler/miras-hukuku/mirastan-feragat-sozlesmesi.html">Makaleyi Oku →</a>
-        </article>
-
-        <article class="article-box">
-            <span style="color: #c7a44a; font-size: 11px; font-weight: 700; text-transform: uppercase;">Miras Hukuku</span>
-            <h3>Miras Taksim Sözleşmesi Nasıl Yapılır?</h3>
-            <p>Mirasçılar arasında anlaşma yoluyla mal paylaşımı ve tapu tescil süreçlerinin detayları.</p>
-            <a href="makaleler/miras-hukuku/miras-paylasim-sozlesmesi.html">Makaleyi Oku →</a>
-        </article>
-
-       <article class="article-box">
-            <span style="color: #c7a44a; font-size: 11px; font-weight: 700; text-transform: uppercase;">Aile Hukuku</span>
-            <h3>Anlaşmalı Boşanma Şartları Nelerdir?</h3>
-            <p>Anlaşmalı boşanma için gerekli koşullar, protokol düzenlenmesi ve dava süreci.</p>
-            <a href="makaleler/bosanma-hukuku/anlasmali-bosanma-sartlari.html">Devamını Oku →</a>
-        </article>
-
-        <article class="article-box">
-            <span style="color: #c7a44a; font-size: 11px; font-weight: 700; text-transform: uppercase;">Miras Hukuku</span>
-            <h3>Muris Muvazaası (Mirastan Mal Kaçırma)</h3>
-            <p>Miras bırakanın mal kaçırma amacıyla yaptığı işlemlerin hukuki sonuçları.</p>
-            <a href="makaleler/miras-hukuku/muris-muvazaasi.html">Devamını Oku →</a>
-        </article>
-
-       
-		  <article class="article-box">
-            <span style="color: #c7a44a; font-size: 11px; font-weight: 700; text-transform: uppercase;">Aile Hukuku</span>
-            <h3>Mal Rejimi Davaları</h3>
-            <p>Boşanma sonrası mal paylaşım işlemleri.</p>
-            <a href="makaleler/bosanma-hukuku/mal-rejimi-davalari.html">Devamını Oku →</a>
-        </article>
+    <div class="locations" style="padding: 40px 0; background: #f9fafb;">
+        <h2 style="font-size:26px; margin-bottom:25px; color:#0b1324; text-align:center;">Hizmet Verilen Bölgeler</h2>
+        <div class="location-grid" style="display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:20px; max-width:850px; margin:auto; padding: 0 20px;">
+            <div class="location" style="background:#fff; padding:20px; border-radius:14px; text-align:center; box-shadow:0 8px 25px rgba(0,0,0,.05);">
+                <a href="usak-avukat.html" style="font-weight:600;color:#0b1324;">Uşak Merkez</a>
+            </div>
+            <div class="location" style="background:#fff; padding:20px; border-radius:14px; text-align:center; box-shadow:0 8px 25px rgba(0,0,0,.05);">
+                <a href="sivasli-avukat.html" style="font-weight:600;color:#0b1324;">Sivaslı İlçesi</a>
+            </div>
+            <div class="location" style="background:#fff; padding:20px; border-radius:14px; text-align:center; box-shadow:0 8px 25px rgba(0,0,0,.05);">
+                <a href="karahalli-avukat.html" style="font-weight:600;color:#0b1324;">Karahallı İlçesi</a>
+            </div>
+        </div>
     </div>
- 
-    <div style="text-align:center;margin-top:50px">
-        <a href="makaleler.html" style="background:#0b1324;color:#c7a44a;padding:14px 32px;border-radius:999px;font-weight:600;">Tüm Arşivi Gör</a>
+</main>
+
+<footer style="background-color: #0b1324; color: #ffffff; padding: 50px 0 30px; border-top: 2px solid #c7a44a;">
+    <div class="container">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px;">
+            <div> 
+                <h3 style="font-size: 24px; color: #fff; margin: 0 0 15px 0;">SALGÜR HUKUK</h3>
+                <p style="font-size: 15px; opacity: 0.8; text-align: justify;">
+                    Uşak'ın merkezinden ilçelerine uzanan geniş hizmet ağımızla, adaletin tesisi için modern ve sonuç odaklı hukuk çözümleri üretiyoruz.
+                </p>
+            </div>
+            <div style="padding-left: 10px;">
+                <h3 style="font-size: 19px; color: #c7a44a; margin: 0 0 20px 0;">Kurumsal</h3>
+                <ul style="list-style: none; padding: 0; margin: 0; font-size: 15px; line-height: 2.2;">
+                    <li><a href="index.html" style="color: #fff; opacity: 0.7;">Anasayfa</a></li>
+                    <li><a href="iletisim.html" style="color: #fff; opacity: 0.7;">İletişim</a></li>
+                    <li><a href="#" style="color: #fff; opacity: 0.7;">KVKK Aydınlatma</a></li>
+                </ul>
+            </div>
+            <div style="text-align: right;">
+                <h3 style="font-size: 19px; color: #c7a44a; margin: 0 0 20px 0;">Bize Ulaşın</h3>
+                <p style="font-size: 14px; opacity: 0.8; margin-bottom: 5px;">Fevzi Çakmak Mah. İlay sokak, No:4/13 <br>Merkez / UŞAK</p>
+                <p style="font-size: 14px; opacity: 0.8; margin-bottom: 5px;">0542 631 00 64</p>
+                <p style="font-size: 14px; opacity: 0.8;">esrefsalgur@gmail.com</p>
+            </div>
+        </div>
+        <hr style="margin: 30px 0 20px; border: 0; border-top: 1px solid rgba(255,255,255,0.1);">
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
+            <p style="font-size: 11px; color: rgba(255,255,255,0.35); margin: 0;"><strong>HUKUKİ UYARI:</strong> Bu web sitesindeki bilgiler Türkiye Barolar Birliği'nin reklam yasağına uygundur.</p>
+            <p style="font-size: 12px; color: rgba(255,255,255,0.4); margin: 0;">© 2026 Salgür Hukuk. Tüm Hakları Saklıdır.</p>
+        </div>
     </div>
-</section>
-<!-- Hizmet Bölgeleri -->
-<div class="locations" style="margin-top:70px;">
-  
-  <h2 style="
-    font-family:'Playfair Display',serif;
-    font-size:28px;
-    margin-bottom:25px;
-    color:#0b1324;
-    text-align:center;
-  ">
-    Hizmet Verilen Bölgeler
-  </h2>
-
-  <div class="location-grid" style="
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:20px;
-    max-width:850px;
-    margin:auto;
-  ">
-
-    <div class="location" style="
-      background:#ffffff;
-      padding:16px 20px;
-      border-radius:12px;
-      text-align:center;
-      box-shadow:0 6px 18px rgba(0,0,0,.05);
-    ">
-      <a href="usak-avukat.html" style="font-weight:600;color:#0b1324;">
-        Uşak Merkez
-      </a>
-    </div>
-
-    <div class="location" style="
-      background:#ffffff;
-      padding:16px 20px;
-      border-radius:12px;
-      text-align:center;
-      box-shadow:0 6px 18px rgba(0,0,0,.05);
-    ">
-      <a href="sivasli-avukat.html" style="font-weight:600;color:#0b1324;">
-        Sivaslı İlçesi
-      </a>
-    </div>
-
-    <div class="location" style="
-      background:#ffffff;
-      padding:16px 20px;
-      border-radius:12px;
-      text-align:center;
-      box-shadow:0 6px 18px rgba(0,0,0,.05);
-    ">
-      <a href="karahalli-avukat.html" style="font-weight:600;color:#0b1324;">
-        Karahallı İlçesi
-      </a>
-    </div>
-
-  </div>
-</div>
-
-<footer style="background:#0b1324;color:#c7a44a;padding:30px 20px;">
-  
-  <div class="container" style="
-    max-width:1050px;
-    margin:auto;
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:28px;
-    text-align:left;
-    align-items:start;
-  ">
-
-    <!-- Hakkımızda -->
-    <div>
-      <h3 style="
-        font-family:'Playfair Display',serif;
-        font-size:18px;
-        margin-bottom:8px;
-        color:#ffffff;">
-        Salgür Hukuk & Danışmanlık
-      </h3>
-      <p style="font-size:13.5px;line-height:1.6;color:#d4c47e;margin:0;">
-        Uşak Merkez, Sivaslı ve Karahallı ilçelerinde profesyonel avukatlık ve hukuki danışmanlık hizmetleri sunmaktayız.
-      </p>
-    </div>
-
-    <!-- Hizmet Alanları -->
-    <div>
-      <h3 style="
-        font-family:'Playfair Display',serif;
-        font-size:18px;
-        margin-bottom:8px;
-        color:#ffffff;">
-        Hizmet Alanlarımız
-      </h3>
-      <ul style="list-style:none;padding:0;font-size:13.5px;line-height:1.7;margin:0;">
-        <li><a href="usak-bosanma-avukati.html" style="color:#c7a44a;">Aile ve Boşanma Hukuku</a></li>
-        <li><a href="usak-ceza-avukati.html" style="color:#c7a44a;">Ceza Hukuku</a></li>
-         <li><a href="usak-gayrimenkul-ve-miras-avukati.html" style="color:#c7a44a;">Gayrimenkul ve Miras Hukuku</a></li>
-        <li><a href="usak-is-hukuku-avukati.html" style="color:#c7a44a;">İş Hukuku</a></li>
-        <li><a href="usak-tazminat-hukuku-avukati.html" style="color:#c7a44a;">Tazminat Hukuku</a></li>
-        <li><a href="usak-borclar-hukuku-avukati.html" style="color:#c7a44a;">Borçlar Hukuku</a></li>
-        <li><a href="usak-idare-hukuku-avukati.html" style="color:#c7a44a;">İdare Hukuku</a></li>
-      </ul>
-    </div>
-
-    <!-- İletişim -->
-    <div>
-      <h3 style="
-        font-family:'Playfair Display',serif;
-        font-size:18px;
-        margin-bottom:8px;
-        color:#ffffff;">
-        İletişim
-      </h3>
-      <p style="font-size:13.5px;line-height:1.6;margin:0;">
-        <strong>Adres:</strong> Fevzi Çakmak Mah. İlay Sok. No:4/13, Merkez/Uşak<br>
-        <strong>Telefon:</strong> +90 542 631 00 64<br>
-        <strong>Web:</strong>
-        <a href="https://salgurhukuk.com/" style="color:#c7a44a;">salgurhukuk.com</a>
-      </p>
-    </div>
-
-  </div>
-
-  <!-- Alt Kısım -->
-  <div style="
-    text-align:center;
-    margin-top:22px;
-    font-size:11.5px;
-    line-height:1.5;
-    opacity:0.85;
-  ">
-    <p style="margin:0;">
-      © 2026 Salgür Hukuk & Danışmanlık. Tüm hakları saklıdır.
-    </p>
-    <p style="margin:4px 0 0;">
-      Bu internet sitesindeki bilgiler bilgilendirme amaçlıdır, hukuki danışmanlık niteliği taşımaz.
-    </p>
-  </div>
-
 </footer>
 
-
-<a href="https://wa.me/905426310064" target="_blank" style="
-    position: fixed;
-    bottom: 25px;
-    right: 25px;
-    background-color: #25d366;
-    color: #fff;
-    padding: 12px 20px;
-    border-radius: 50px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    text-decoration: none;
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
-    font-size: 15px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-    z-index: 1000;
-    transition: transform 0.3s ease;">
-    
-    <span style="font-size: 20px;">💬</span> 
-    
+<a href="https://wa.me/905426310064" target="_blank" style="position: fixed; bottom: 25px; right: 25px; background-color: #25d366; color: #fff; padding: 12px 22px; border-radius: 50px; display: flex; align-items: center; gap: 10px; text-decoration: none; font-weight: 600; box-shadow: 0 4px 15px rgba(0,0,0,0.3); z-index: 9999;">
+    <i class="bi bi-whatsapp" style="font-size: 20px;"></i>
     <span>WhatsApp Danışma Hattı</span>
 </a>
 
-<style>
-    /* Mobilde butonu biraz daha küçültelim ki içeriği çok kapatmasın */
-    @media (max-width: 480px) {
-        a[href*="wa.me"] {
-            padding: 10px 15px;
-            font-size: 13px;
-            bottom: 20px;
-            right: 20px;
-        }
-    }
-</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </body>
 </html>
