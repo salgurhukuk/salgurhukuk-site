@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="tr">
 <head>
@@ -84,67 +85,81 @@ nav a:hover{color:#fff}
 .articles-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
 .article-box { background: #f9fafb; border-radius: 18px; padding: 25px; display: flex; flex-direction: column; }
 
-@media(max-width:768px){
-    header .container { flex-direction: column; gap: 10px; text-align: center; }
-    nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 10px; }
-    nav a, .dropbtn { margin-left: 0; font-size: 14px; }
-}
-  /* GENEL MOBİL DÜZELTME (Horizontal Scroll Önleyici) */
-html, body {
-    overflow-x: hidden; /* Sayfanın sağa kaymasını engeller */
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-/* HEADER VE NAV MOBİL AYARLARI */
-@media screen and (max-width: 768px) {
+/* --- Mobil Uyumluluk ve Dropdown Fix --- */
+@media (max-width: 768px) {
     header .container {
-        flex-direction: column; /* Logoyu ve Navigasyonu alt alta getir */
-        align-items: center;
-        text-align: center;
-        padding: 10px 0;
+        flex-direction: column;
+        padding: 15px 10px;
     }
 
     nav {
         display: flex;
-        flex-wrap: wrap; /* Sığmayan butonları alt satıra at */
-        justify-content: center;
-        gap: 10px;
-        margin-top: 15px;
+        flex-direction: column; /* Linkleri alt alta diz */
         width: 100%;
+        gap: 0; /* Boşlukları manuel kontrol edeceğiz */
+        margin-top: 15px;
     }
 
-    /* DROPDOWN MOBİL DÜZENİ */
+    nav a, .dropdown {
+        width: 100%;
+        margin: 0 !important;
+        text-align: center;
+        border-bottom: 1px solid rgba(199, 164, 74, 0.1);
+    }
+
+    nav a {
+        padding: 12px 0;
+        display: block;
+    }
+
+    /* Dropdown Menülerin Mobildeki Davranışı */
     .dropdown {
-        position: relative; /* Sabit pozisyon */
-        width: auto;
+        position: relative;
+    }
+
+    .dropbtn {
+        padding: 12px 0;
+        display: block;
+        width: 100%;
+        cursor: pointer;
     }
 
     .dropdown-content {
-        position: absolute; /* Mobilde diğer içeriklerin üstüne binmesin diye */
-        left: 50%;
-        transform: translateX(-50%); /* Menüyü tam ortalar */
-        min-width: 180px;
-        z-index: 1000;
-        background-color: #0b1324; /* Header rengiyle aynı yapın */
-        border: 1px solid #c7a44a; /* Altın sarısı çerçeve ile belirginleştir */
-        border-radius: 8px;
+        position: static; /* Mobilde havada asılı kalma, içeriği aşağı it */
+        display: none; 
+        width: 100%;
+        background: #162136; /* Ana menüden biraz daha açık ton */
+        box-shadow: none;
+        border-radius: 0;
+        transform: none !important;
+        left: 0 !important;
+    }
+
+    /* Mobilde tıklandığında/dokunulduğunda açılması için */
+    .dropdown:hover .dropdown-content {
+        display: block;
     }
 
     .dropdown-content a {
-        color: #fff !important;
-        padding: 12px 16px;
-        border-bottom: 1px solid rgba(199, 164, 74, 0.2); /* İnce ayraç */
-        font-size: 14px;
-        text-align: center;
+        padding: 10px 20px !important;
+        font-size: 13px;
+        background: transparent;
+        border-bottom: 1px solid rgba(255,255,255,0.05);
     }
 
-    /* Mobilde linklerin birbirine çok yapışık olmasını engeller */
-    nav a {
-        padding: 8px 12px;
+    /* WhatsApp Butonu Mobilde Küçültme */
+    a[href^="https://wa.me"] {
+        padding: 10px 15px !important;
         font-size: 14px;
+        bottom: 15px !important;
+        right: 15px !important;
     }
+}
+
+/* Sayfa Kaymasını Engellemek İçin Altın Kural */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
 </style>
 </head>
