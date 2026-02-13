@@ -89,6 +89,63 @@ nav a:hover{color:#fff}
     nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 10px; }
     nav a, .dropbtn { margin-left: 0; font-size: 14px; }
 }
+  /* GENEL MOBİL DÜZELTME (Horizontal Scroll Önleyici) */
+html, body {
+    overflow-x: hidden; /* Sayfanın sağa kaymasını engeller */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER VE NAV MOBİL AYARLARI */
+@media screen and (max-width: 768px) {
+    header .container {
+        flex-direction: column; /* Logoyu ve Navigasyonu alt alta getir */
+        align-items: center;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap; /* Sığmayan butonları alt satıra at */
+        justify-content: center;
+        gap: 10px;
+        margin-top: 15px;
+        width: 100%;
+    }
+
+    /* DROPDOWN MOBİL DÜZENİ */
+    .dropdown {
+        position: relative; /* Sabit pozisyon */
+        width: auto;
+    }
+
+    .dropdown-content {
+        position: absolute; /* Mobilde diğer içeriklerin üstüne binmesin diye */
+        left: 50%;
+        transform: translateX(-50%); /* Menüyü tam ortalar */
+        min-width: 180px;
+        z-index: 1000;
+        background-color: #0b1324; /* Header rengiyle aynı yapın */
+        border: 1px solid #c7a44a; /* Altın sarısı çerçeve ile belirginleştir */
+        border-radius: 8px;
+    }
+
+    .dropdown-content a {
+        color: #fff !important;
+        padding: 12px 16px;
+        border-bottom: 1px solid rgba(199, 164, 74, 0.2); /* İnce ayraç */
+        font-size: 14px;
+        text-align: center;
+    }
+
+    /* Mobilde linklerin birbirine çok yapışık olmasını engeller */
+    nav a {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+}
 </style>
 </head>
 
