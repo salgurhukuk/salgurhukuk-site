@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="tr">
 <head>
@@ -38,6 +39,49 @@ li{margin-bottom: 8px;}
 .card p{margin:10px 0 15px;font-size:14px;color:#4b5563;line-height:1.6;}
 .card a{margin-top:auto;color:#0b1324; font-weight:700; text-decoration: none; font-size: 14px; border-bottom: 1px solid #c7a44a; align-self: flex-start;}
 .card:hover{transform:translateY(-5px);}
+/* Dropdown Menü Tasarımı - Geliştirilmiş Geçiş */
+.dropdown { 
+    position: relative; 
+    display: inline-block; 
+}
+.dropbtn { 
+    color: #fff; 
+    text-decoration: none; 
+    font-size: 15px; 
+    font-weight: 500; 
+    padding-bottom: 10px; /* Buton ile menü arasındaki "köprüyü" kurar */
+}
+.dropdown-content { 
+    display: none; 
+    position: absolute; 
+    background-color: #0b1324; 
+    min-width: 220px; 
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.3); 
+    z-index: 1000; 
+    border: 1px solid #c7a44a;
+    top: 25px; /* Menüyü yukarı çekerek boşluğu kapattık */
+    left: 0;
+}
+.dropdown-content a { 
+    color: #fff !important; 
+    padding: 12px 16px; 
+    text-decoration: none; 
+    display: block; 
+    font-size: 14px; 
+    border-bottom: 1px solid #1a263a;
+    transition: 0.2s;
+}
+.dropdown-content a:hover { 
+    background-color: #c7a44a; 
+    color: #0b1324 !important; 
+}
+/* Menünün açık kalmasını sağlayan tetikleyici */
+.dropdown:hover .dropdown-content { 
+    display: block; 
+}
+.dropdown:hover .dropbtn { 
+    color: #c7a44a; 
+}
 </style>
 <script type="application/ld+json">
 {
@@ -122,14 +166,28 @@ li{margin-bottom: 8px;}
         </div>
     </a>
 
-    <nav style="display: flex; gap: 20px; flex-wrap: wrap;">
-        <a href="index.html" style="color: #fff; text-decoration: none; font-size: 15px; font-weight: 500;">Anasayfa</a>
-        <a href="karahalli-avukat.html" style="color: #fff; text-decoration: none; font-size: 15px; font-weight: 500;">Karahallı</a>
-        <a href="sivasli-avukat.html" style="color: #fff; text-decoration: none; font-size: 15px; font-weight: 500;">Sivaslı</a>
-        <a href="banaz-avukat.html" style="color: #c7a44a; text-decoration: none; font-size: 15px; font-weight: 700;">Banaz</a>
-        <a href="usak-avukat.html" style="color: #fff; text-decoration: none; font-size: 15px; font-weight: 500;">Uşak</a>
-        <a href="iletisim.html" style="color: #fff; text-decoration: none; font-size: 15px; font-weight: 500;">İletişim</a>
-    </nav>
+    <nav style="display: flex; gap: 20px; flex-wrap: wrap; align-items: center;">
+    <a href="index.html" style="color: #fff; text-decoration: none; font-size: 15px; font-weight: 500;">Anasayfa</a>
+    
+    <div class="dropdown">
+        <a href="usak-avukat.html" class="dropbtn" style="color: #fff; text-decoration: none; font-size: 15px; font-weight: 500;">Hizmetler ▾</a>
+        <div class="dropdown-content">
+            <a href="usak-bosanma-avukati.html">Aile-Boşanma Hukuku</a>
+            <a href="usak-borclar-hukuku-avukati.html">Borçlar Hukuku</a>
+            <a href="usak-ceza-avukati.html">Ceza Hukuku</a>
+            <a href="usak-gayrimenkul-ve-miras-avukati.html">Gayrimenkul ve Miras</a>
+            <a href="usak-idare-hukuku-avukati.html">İdare Hukuku</a>
+            <a href="usak-is-hukuku-avukati.html">İş Hukuku</a>
+            <a href="usak-tazminat-hukuku-avukati.html">Tazminat Hukuku</a>
+            <a href="hukuki-danismanlik.html">Hukuki Danışmanlık</a>
+        </div>
+    </div>
+    <a href="karahalli-avukat.html" style="color: #fff; text-decoration: none; font-size: 15px; font-weight: 500;">Karahallı</a>
+    <a href="sivasli-avukat.html" style="color: #fff; text-decoration: none; font-size: 15px; font-weight: 500;">Sivaslı</a>
+    <a href="banaz-avukat.html" style="color: #c7a44a; text-decoration: none; font-size: 15px; font-weight: 700;">Banaz</a>
+    <a href="usak-avukat.html" style="color: #fff; text-decoration: none; font-size: 15px; font-weight: 500;">Uşak</a>
+    <a href="iletisim.html" style="color: #fff; text-decoration: none; font-size: 15px; font-weight: 500;">İletişim</a>
+</nav>
   </div>
 </header>
 
