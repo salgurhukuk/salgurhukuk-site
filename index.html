@@ -270,7 +270,205 @@ html, body{
     max-width:100%;
     overflow-x:hidden;
 }
+/* Gelişmiş Header ve Hero Alanı */
+.hero-section {
+    background: linear-gradient(rgba(11, 19, 36, 0.9), rgba(11, 19, 36, 0.9)), url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=1600'); /* Arka plana hafif bir hukuk görseli */
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0 80px 0;
+    text-align: center;
+    color: #ffffff;
+    border-bottom: 4px solid #c7a44a;
+}
 
+.hero-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    color: #ffffff !important; /* Altın rengi yerine beyaz yapıyoruz ki asil dursun */
+}
+
+.hero-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    color: #c7a44a;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.hero-divider {
+    width: 60px;
+    height: 3px;
+    background-color: #c7a44a;
+    margin: 20px auto;
+}
+
+.main-cta {
+    display: inline-block;
+    padding: 15px 35px;
+    background-color: #c7a44a;
+    color: #0b1324;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    transition: 0.3s;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.main-cta:hover {
+    background-color: #ffffff;
+    color: #0b1324;
+    transform: translateY(-3px);
+}
+.hero-wrapper {
+    background: linear-gradient(to right, rgba(11, 19, 36, 0.95), rgba(11, 19, 36, 0.7)), url('images/hukuk-bg.jpg'); /* Buraya şık bir kütüphane veya adliye görseli koymalısın */
+    background-size: cover;
+    background-position: center;
+    padding: 80px 0;
+    color: white;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.hero-text { flex: 1; }
+.hero-text h1 { font-size: 38px; font-family: 'Playfair Display', serif; margin-bottom: 20px; border-left: 5px solid var(--accent); padding-left: 20px; }
+.hero-text p { font-size: 18px; opacity: 0.9; margin-bottom: 25px; }
+
+.hero-phone { color: var(--accent); text-decoration: none; font-weight: bold; font-size: 18px; }
+
+/* Sağdaki Kurumsal Kart */
+.hero-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 40px;
+    border-radius: 15px;
+    border: 1px solid rgba(199, 164, 74, 0.3);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    min-width: 320px;
+}
+
+.card-inner h2 { color: white; letter-spacing: 3px; margin: 10px 0; }
+.card-divider { width: 50px; height: 2px; background: var(--accent); margin: 15px auto; }
+.card-inner h3 { color: var(--accent); font-size: 18px; }
+
+/* Sarı Alt Bant */
+.location-bar {
+    background: var(--accent);
+    color: var(--primary);
+    padding: 12px 0;
+    text-align: center;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 900px) {
+    .hero-container { flex-direction: column; text-align: center; }
+    .hero-text h1 { border-left: none; padding-left: 0; }
+}
+.location-strip {
+    background-color: var(--accent); /* Senin altın sarısı rengin */
+    color: #0b1324; /* Lacivert yazı, sarı üzerinde en asil duran renktir */
+    padding: 12px 0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 10;
+}
+
+.strip-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+}
+
+.strip-item {
+    transition: 0.3s;
+}
+
+.strip-divider {
+    color: rgba(11, 19, 36, 0.4); /* Noktaları biraz daha silik yaparak yazıları öne çıkarır */
+}
+
+.strip-tag {
+    background: #0b1324; /* "Bölgesel Hizmet" yazısını siyah bir kutu içine alarak vurgular */
+    color: var(--accent);
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 11px;
+}
+
+/* Mobilde yazıların birbirine girmemesi için */
+@media (max-width: 600px) {
+    .strip-content {
+        gap: 8px;
+        font-size: 11px;
+    }
+}
+/* Altın Sarı Bant Stili */
+.location-strip {
+    background-color: #c7a44a; /* Altın sarısı rengi */
+    padding: 12px 0;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.strip-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    color: #0b1324; /* Lacivert yazı sarı üzerinde çok net okunur */
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.dot {
+    width: 4px;
+    height: 4px;
+    background-color: rgba(11, 19, 36, 0.3);
+    border-radius: 50%;
+}
+
+.highlight {
+    background: #0b1324; /* "Bölgesel Hizmet" kısmını koyu kutu içine alır */
+    color: #c7a44a;
+    padding: 3px 10px;
+    border-radius: 3px;
+    font-size: 11px;
+}
+
+@media (max-width: 768px) {
+    .strip-wrapper { gap: 10px; font-size: 11px; }
+    .dot { display: none; } /* Mobilde noktaları kaldırıp yer açar */
+}
+.hero-wrapper {
+    /* Önce koyu bir katman (metinler okunsun diye), sonra resmin yolu */
+    background: linear-gradient(to right, rgba(11, 19, 36, 0.95), rgba(11, 19, 36, 0.7)), 
+                url('images/hero-bg.webp'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Sayfa kayarken resim sabit kalır, çok şık durur */
+    padding: 80px 0;
+    color: white;
+}
 </style>
 
 </head>
@@ -283,8 +481,8 @@ html, body{
         <a href="index.html" style="display: flex; align-items: center; gap: 15px;">
             <div style="font-size: 35px; color: #fff;">⚖️</div> 
             <div style="display: flex; flex-direction: column; justify-content: center;">
-                <span style="font-family:'Playfair Display',serif; font-size: 22px; font-weight: 700; color: #fff; line-height: 1.1; letter-spacing: 1px;">SALGÜR</span>
-                <span style="font-family:'Inter',sans-serif; font-size: 15px; font-weight: 500; color: #c7a44a; letter-spacing: 2px; margin-top: 2px;">HUKUK & DANIŞMANLIK</span>
+                <span style="font-family:'Playfair Display',serif; font-size: 22px; font-weight: 700; color: #fff; line-height: 1.1; letter-spacing: 1px;">SALGÜR HUKUK</span>
+                <span style="font-family:'Inter',sans-serif; font-size: 15px; font-weight: 500; color: #c7a44a; letter-spacing: 2px; margin-top: 2px;"></span>
             </div>
         </a>
         <nav class="menu">
@@ -318,21 +516,73 @@ html, body{
         </nav>
     </div>
 </header>
+<section class="hero-wrapper">
+    <div class="container hero-container">
+        <div class="hero-text">
+            <h1>Uşak'ta Profesyonel Avukatlık ve Hukuki Danışmanlık</h1>
+            <p>Boşanma, miras, ceza ve iş hukuku başta olmak üzere; geniş hukuki yelpazede, Uşak ve çevre illerde haklarınızı korumak için stratejik çözümler sunuyoruz.</p>
+            <a href="tel:+905426310064" class="hero-phone">📞 Hemen Danışın</a>
+        </div>
+        
+       <div>
+      <img src="images/esref.webp" alt="Uşak Avukat M.Eşref Salgür - Hukuk Bürosu">
+    </div>
+</div>
+        </div>
+    </div>
+</section>
 
+<div class="location-strip">
+    <div class="container">
+        <div class="strip-wrapper">
+            <span>UŞAK MERKEZ</span>
+             <span class="dot"></span>
+            <span>BANAZ</span>
+			 <span class="dot"></span>
+            <span>ÇİVRİL</span>
+			<span class="dot"></span>
+            <span>EŞME</span>
+            <span class="dot"></span>
+            <span>GEDİZ</span>
+            <span class="dot"></span>
+            <span>KARAHALLI</span>
+            <span class="dot"></span>
+            <span>SİVASLI</span>
+            <span class="dot"></span>
+            <span>ULUBEY</span>
+            <span class="dot"></span>
+            <span>BÖLGESEL HUKUK HİZMETİ</span>
+        </div>
+    </div>
+</div>
+</div>
 <main>
 
 <!-- Hakkımızda / Ana Metin -->
-<section class="about-seo-final" style="padding: 60px 0; background: #ffffff;"> <div class="container"> <div style="max-width: 1000px; margin: 0 auto; text-align: center; margin-bottom: 35px;"> <h1 style="font-family: 'Playfair Display', serif; font-size: 38px; color: #0b1324; margin-bottom: 8px; font-weight: 700; letter-spacing: 1px;">Salgür Hukuk ve Danışmanlık</h1> <h2 style="font-family: 'Inter', sans-serif; font-size: 19px; color: #c7a44a; letter-spacing: 1px; font-weight: 600; margin-top: 0;">Avukat M. Eşref Salgür</h2> <div style="width: 50px; height: 3px; background: #c7a44a; margin: 18px auto 0 auto;"></div></div>
+<section class="about-seo-final" style="padding: 60px 0; background: #ffffff;"> 
+    <div class="container"> 
+        <div style="max-width: 1000px; margin: 0 auto; text-align: center; margin-bottom: 35px;"> 
+            <h2 style="font-family: 'Playfair Display', serif; font-size: 32px; color: #0b1324; margin-bottom: 8px; font-weight: 700; letter-spacing: 1px;">
+                Şeffaf ve Çözüm Odaklı Hukuki Danışmanlık
+            </h2> 
+            <p style="font-family: 'Inter', sans-serif; font-size: 16px; color: #c7a44a; letter-spacing: 2px; font-weight: 600; text-transform: uppercase; margin-top: 0;">
+                Uşak ve çevre illerde güvenilir hukuki çözüm ortağınız
+            </p> 
+            <div style="width: 50px; height: 3px; background: #c7a44a; margin: 18px auto 0 auto;"></div>
+        </div>
 
+        <div style="color: #4b5563; font-size: 17px; line-height: 1.9; font-family: 'Inter', sans-serif;">
+            <p style="text-align: justify; margin-bottom: 12px;">
+                <strong>Uşak Barosu</strong> bünyesinde hizmet veren ofisimiz, müvekkillerine stratejik çözüm ortaklığı sunar. <strong>Uşak Avukat</strong> arayışınızda; deneyim, gizlilik ve hızlı sonuç odaklı yaklaşımımızla yanınızdayız. <strong>Uşak merkezli</strong> olarak bireysel ve kurumsal müvekkillerimize dava takibi, hukuki danışmanlık ve arabuluculuk hizmetleri sunmaktayız.
+            </p>
+            
+            <p style="text-align: justify; border-left: 4px solid #c7a44a; padding-left: 25px; font-style: italic; background: #f9f9f9; padding-top: 20px; padding-bottom: 20px; margin: 25px 0;">
+                Hukuk sisteminde her somut olay kendine özgü şartlar taşır. Bu nedenle standart çözümler yerine her dosya için özel değerlendirme yaparak strateji belirliyoruz. Güncel mevzuat ve Yargıtay içtihatlarını yakından takip ederek, müvekkil haklarının en etkin şekilde korunmasını amaçlıyoruz.
+            </p>
+        </div>
 
-<div style="color: #4b5563; font-size: 17px; line-height: 1.9; font-family: 'Inter', sans-serif;">
-<p style="text-align: justify; margin-bottom: 12px;">
-<strong>Uşak Barosu</strong> bünyesinde hizmet veren ofisimiz, müvekkillerine stratejik çözüm ortaklığı sunar. <strong>Uşak Avukat</strong> arayışınızda; deneyim, gizlilik ve hızlı sonuç odaklı yaklaşımımızla yanınızdayız. <strong>Uşak merkezli</strong> olarak bireysel ve kurumsal müvekkillerimize dava takibi, hukuki danışmanlık ve arabuluculuk hizmetleri sunmaktayız.
-</p>
-<p style="text-align: justify; border-left: 4px solid #f4f7f9; padding-left: 25px; font-style: italic; background: #fafafa; padding-top: 20px; padding-bottom: 20px; margin-top: 0;">
-Hukuk sisteminde her somut olay kendine özgü şartlar taşır. Bu nedenle <strong>Salgür Hukuk</strong>, standart çözümler yerine her dosya için özel değerlendirme yaparak strateji belirler. Uşak Barosu’na kayıtlı avukatlar eşliğinde yürütülen çalışmalarımızda, güncel mevzuat ve Yargıtay içtihatları yakından takip edilerek müvekkil haklarının en etkin şekilde korunması amaçlanır.
-</p>
-</div><div style="text-align: center; margin-top: 35px;"> <a href="tel:+905426310064" style="background: #0b1324; color: #fff; padding: 14px 32px; border-radius: 5px; font-weight: 600; display: inline-block; border: 1px solid #c7a44a; text-decoration: none;">Hukuki Danışmanlık Alın</a> </div> </div> </section>
+       
+</section>
 
 
 
