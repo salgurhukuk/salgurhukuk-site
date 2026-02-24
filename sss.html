@@ -1,0 +1,183 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hukuki Bilgi Bankası | Avukat Eşref Salgür</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root { --gold: #c7a44a; --dark: #0b1324; --text: #4b5563; }
+        body { margin:0; font-family:'Inter', sans-serif; background: #fff; color: var(--text); line-height: 1.5; }
+        header { background:#fff; border-bottom:1px solid #eee; padding:12px; text-align:center; position: sticky; top: 0; z-index: 100; }
+        .back-link { text-decoration:none; color:var(--dark); font-weight:700; font-size:13px; display: inline-flex; align-items: center; gap: 5px; }
+        .hero { background: var(--dark); color: #fff; padding: 40px 20px; text-align: center; }
+        .hero h1 { font-family: 'Playfair Display', serif; color: var(--gold); margin: 0; font-size: 32px; margin-bottom: 8px; }
+        .hero p { opacity: 0.8; font-size: 16px; max-width: 600px; margin: auto; }
+        .container { max-width: 850px; margin: auto; padding: 20px; }
+        
+        .category-group { margin-bottom: 35px; }
+        .category-title { 
+            font-family: 'Playfair Display', serif; font-size: 22px; color: var(--dark); 
+            margin-bottom: 15px; padding-bottom: 5px; border-bottom: 2px solid var(--gold);
+        }
+
+        .faq-item { background: #fff; border: 1px solid #eee; border-radius: 6px; margin-bottom: 8px; transition: all 0.3s ease; }
+        .faq-question { 
+            width: 100%; padding: 15px 18px; background: none; border: none; text-align: left; 
+            font-size: 15px; font-weight: 600; color: var(--dark); cursor: pointer; 
+            display: flex; justify-content: space-between; align-items: center; outline: none;
+        }
+        .faq-question span { color: var(--gold); font-size: 20px; transition: transform 0.3s ease; }
+        .faq-answer { max-height: 0; overflow: hidden; background: #fafafa; transition: max-height 0.3s ease-out; }
+        .faq-answer p { padding: 15px 18px; margin: 0; font-size: 14.5px; color: var(--text); line-height: 1.6; border-top: 1px solid #f0f0f0; }
+
+        .faq-item.active { border-color: var(--gold); box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+        .faq-item.active .faq-answer { max-height: 1000px; }
+        .faq-item.active .faq-question span { transform: rotate(45deg); }
+        .faq-item.active .faq-question { color: var(--gold); }
+
+        .info-note { background: #fff8e1; border: 1px solid #ffe082; padding: 12px; border-radius: 6px; margin: 10px 18px; color: #856404; font-size: 13px; }
+        .cta-box { background: var(--dark); color: #fff; padding: 35px; border-radius: 12px; text-align: center; margin-top: 40px; }
+        .whatsapp-btn { display: inline-block; background: #25D366; color: #fff; padding: 12px 30px; text-decoration: none; border-radius: 6px; font-weight: 700; margin-top: 15px; }
+    </style>
+</head>
+<body>
+
+<header><a href="index.html" class="back-link">← ANA SAYFAYA DÖN</a></header>
+
+<section class="hero">
+    <h1>Hukuki Bilgi Bankası</h1>
+    <p>Uşak ve çevresindeki müvekkillerimiz için hazırladığımız en kapsamlı rehber.</p>
+</section>
+
+<div class="container">
+    
+    <div class="category-group">
+        <h2 class="category-title">Aile & Boşanma Hukuku</h2>
+        <div class="faq-item">
+            <button class="faq-question">Anlaşmalı boşanma davası ne kadar sürer? <span>+</span></button>
+            <div class="faq-answer"><p>Tarafların protokolde uzlaşması durumunda genellikle tek celsede, 1-3 ay içinde sonuçlanır.</p></div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">Boşanmada ziynet eşyaları (takılar) kime aittir? <span>+</span></button>
+            <div class="faq-answer"><p>Yargıtay uygulamasına göre, kadına özgü olan takılar kural olarak kadına ait sayılır.</p></div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">Boşanma davası devam ederken eşimden ayrı yaşayabilir miyim? <span>+</span></button>
+            <div class="faq-answer"><p>Evet, hakim barınma önlemlerini alır. Ayrı yaşama hakkı doğar ve tedbir nafakası talep edilebilir.</p></div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">Anlaşmalı boşanmadan sonra protokol değiştirilebilir mi? <span>+</span></button>
+            <div class="faq-answer"><p>Kesinleşen protokol değişmez ancak nafaka ve velayet için her zaman yeni dava açılabilir.</p></div>
+        </div>
+    </div>
+
+    <div class="category-group">
+        <h2 class="category-title">İş Hukuku</h2>
+        <div class="faq-item">
+            <button class="faq-question">Kıdem tazminatı şartları nelerdir? <span>+</span></button>
+            <div class="faq-answer"><p>En az 1 yıl çalışma ve iş sözleşmesinin haklı nedenle veya emeklilik gibi sebeplerle sona ermesi gerekir.</p></div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">İstifa eden işçi tazminat alabilir mi? <span>+</span></button>
+            <div class="faq-answer"><p>Normal istifada alınmaz ancak "Haklı Nedenle Fesih" (maaş ödenmemesi vb.) varsa tazminat hakkı doğar.</p></div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">İşe iade davası açma süresi nedir? <span>+</span></button>
+            <div class="faq-answer"><p>Fesih bildiriminden itibaren 1 ay içinde arabulucuya başvurulmalıdır.</p></div>
+        </div>
+    </div>
+
+    <div class="category-group">
+        <h2 class="category-title">Ceza Hukuku</h2>
+        <div class="faq-item">
+            <button class="faq-question">HAGB kararı sabıka kaydında görünür mü? <span>+</span></button>
+            <div class="faq-answer"><p>Hükmün Açıklanmasının Geri Bırakılması kararı genel sicilde görünmez, özel bir sistemde tutulur.</p></div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">Şikayetten vazgeçme davayı düşürür mü? <span>+</span></button>
+            <div class="faq-answer"><p>Şikayete bağlı suçlarda düşürür. Kamu suçlarında yargılama devam eder.</p></div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">Gözaltı ve Tutuklama arasındaki fark nedir? <span>+</span></button>
+            <div class="faq-answer"><p>Gözaltı kısa süreli emniyette tutmadır. Tutuklama ise hakim kararıyla verilen bir tedbirdir.</p></div>
+        </div>
+    </div>
+
+    <div class="category-group">
+        <h2 class="category-title">Gayrimenkul & Kira Hukuku</h2>
+        <div class="faq-item">
+            <button class="faq-question">Kira artış oranı nasıl hesaplanır? <span>+</span></button>
+            <div class="faq-answer"><p>Konutlarda artış oranı 12 aylık TÜFE ortalamasını geçemez.</p></div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">Ev satılırsa yeni malik kiracıyı hemen çıkarabilir mi? <span>+</span></button>
+            <div class="faq-answer"><p>1 ay içinde ihtar çekerek, 6 ay sonra ihtiyaç nedeniyle tahliye davası açabilir.</p></div>
+        </div>
+    </div>
+
+    <div class="category-group">
+        <h2 class="category-title">Miras Hukuku</h2>
+        <div class="faq-item">
+            <button class="faq-question">Reddi miras süresi ne kadardır? <span>+</span></button>
+            <div class="faq-answer"><p>Mirasın geçtiğinin öğrenilmesinden itibaren 3 ay içinde yapılmalıdır.</p></div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">Veraset ilamı nereden alınır? <span>+</span></button>
+            <div class="faq-answer"><p>Noterlerden veya uyuşmazlık varsa Sulh Hukuk Mahkemelerinden alınır.</p></div>
+        </div>
+    </div>
+
+    <div class="category-group">
+        <h2 class="category-title">Trafik & Sigorta Hukuku</h2>
+        <div class="faq-item">
+            <button class="faq-question">Araç değer kaybı tazminatı nedir? <span>+</span></button>
+            <div class="faq-answer"><p>Onarılan aracın piyasa değerindeki düşüştür. Kusurlu tarafın sigortasından 2 yıl içinde istenebilir.</p></div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">Sigortaya başvuru zorunlu mu? <span>+</span></button>
+            <div class="faq-answer"><p>Evet, dava açmadan önce sigorta şirketine yazılı başvuru yasal bir zorunluluktur.</p></div>
+        </div>
+    </div>
+
+    <div class="category-group">
+        <h2 class="category-title">Bilişim & Kişisel Veriler</h2>
+        <div class="faq-item">
+            <button class="faq-question">Sosyal medyada hakaretin cezası nedir? <span>+</span></button>
+            <div class="faq-answer"><p>3 aydan 2 yıla kadar hapis cezasıdır. Sosyal medya üzerinden yapılması ağırlaştırıcı sebeptir.</p></div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">Unutulma Hakkı nedir? <span>+</span></button>
+            <div class="faq-answer"><p>Kişinin güncelliğini yitirmiş verilerinin Google gibi mecralardan silinmesini talep etme hakkıdır.</p></div>
+        </div>
+    </div>
+     <div class="category-group">
+        <h2 class="category-title">Uşak Barosu Adli Yardım</h2>
+        <div class="faq-item">
+            <button class="faq-question">Ücretsiz avukat (Adli Yardım) nasıl alınır? <span>+</span></button>
+            <div class="faq-answer">
+                <p>Maddi durumu yetersiz olan vatandaşlar, muhtarlıktan fakirlik belgesi ve gerekli evraklarla Uşak Barosu Adli Yardım Ofisi'ne başvurarak ücretsiz avukat tayin edilmesini isteyebilirler.</p>
+                <div class="info-note"><strong>Not:</strong> Ofisimiz özel vekaletname ile çalışmaktadır. Adli yardım başvuruları bizzat Baro'ya yapılmalıdır.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cta-box">
+        <h3>Özel Bir Sorunuz mu Var?</h3>
+        <p>Hukuki detaylar için doğrudan bize ulaşın.</p>
+        <a href="https://wa.me/905426310064" class="whatsapp-btn">WhatsApp İle İletişime Geç</a>
+    </div>
+</div>
+
+<script>
+    document.querySelectorAll('.faq-question').forEach(button => {
+        button.addEventListener('click', () => {
+            const item = button.parentElement;
+            const isActive = item.classList.contains('active');
+            document.querySelectorAll('.faq-item').forEach(el => el.classList.remove('active'));
+            if (!isActive) item.classList.add('active');
+        });
+    });
+</script>
+</body>
+</html>
