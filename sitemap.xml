@@ -1,5 +1,6 @@
   <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://salgurhukuk.com/</loc><priority>1.00</priority></url>
+  <url><loc>https://salgurhukuk.com/hizmetler.html</loc><priority>0.80</priority></url>
   <url><loc>https://salgurhukuk.com/makaleler.html</loc><priority>0.80</priority></url>
   <url><loc>https://salgurhukuk.com/hakkimizda.html</loc><priority>0.70</priority></url>
   <url><loc>https://salgurhukuk.com/iletisim.html</loc><priority>0.70</priority></url>
@@ -7,13 +8,16 @@
   
   
   <url><loc>https://salgurhukuk.com/aile-bosanma-hukuku.html</loc><priority>0.90</priority></url>
+  <url><loc>https://salgurhukuk.com/bilisim-hukuku.html</loc><priority>0.90</priority></url>
   <url><loc>https://salgurhukuk.com/bosanma-hukuku.html</loc><priority>0.90</priority></url>
+  <url><loc>https://salgurhukuk.com/gayrimenkul-hukuku.html</loc><priority>0.90</priority></url>
   <url><loc>https://salgurhukuk.com/idare-hukuku.html</loc><priority>0.90</priority></url>
   <url><loc>https://salgurhukuk.com/ceza-hukuku.html</loc><priority>0.90</priority></url>
   <url><loc>https://salgurhukuk.com/hukuki-danismanlik.html</loc><priority>0.90</priority></url>
   <url><loc>https://salgurhukuk.com/is-hukuku.html</loc><priority>0.90</priority></url>
   <url><loc>https://salgurhukuk.com/borclar-hukuku.html</loc><priority>0.90</priority></url>
   <url><loc>https://salgurhukuk.com/tazminat-hukuku.html</loc><priority>0.90</priority></url>
+  <url><loc>https://salgurhukuk.com/tuketici-hukuku.html</loc><priority>0.90</priority></url>
   <url><loc>https://salgurhukuk.com/gayrimenkul-ve-miras-hukuku.html</loc><priority>0.90</priority></url>
 
   <url><loc>https://salgurhukuk.com/usak-avukat.html</loc><priority>0.90</priority></url>
@@ -102,6 +106,7 @@
   <url><loc>https://salgurhukuk.com/makaleler/genel-hukuk/belirsiz-alacak-davasi.html</loc><priority>0.64</priority></url>
 
 </urlset>
+
 
 
 
