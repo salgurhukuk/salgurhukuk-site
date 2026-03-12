@@ -123,7 +123,30 @@
   color: var(--text-gray);
   margin: 0;
 }
+/* Kayma Engelleyici Eklemeler */
+html, body {
+    overflow-x: hidden; /* Yatay kaymayı kesin olarak engeller */
+    width: 100%;
+    position: relative;
+}
 
+img {
+    max-width: 100%; /* Resimlerin ekran dışına taşmasını engeller */
+    height: auto;
+}
+
+.article-card {
+    word-wrap: break-word; /* Uzun kelimelerin kutuyu patlatmasını engeller */
+}
+
+@media (max-width: 768px) {
+    .article-card {
+        padding: 20px; /* Mobilde iç boşluğu azaltarak içeriğe yer açar */
+    }
+    h1 {
+        font-size: 28px; /* Mobilde başlık boyutunu optimize eder */
+    }
+}
     </style>
 	<script type="application/ld+json">
 {
