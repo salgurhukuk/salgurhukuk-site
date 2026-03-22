@@ -1,0 +1,116 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background:#f8fafc;
+    margin:0;
+}
+
+.hukuk-makale {
+    max-width:1000px;
+    margin:auto;
+    padding:40px;
+    background:#fff;
+    border-radius:20px;
+}
+
+.makale-header {
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.makale-header h1 {
+    font-family:'Playfair Display', serif;
+    font-size:34px;
+    color:#0b1324;
+}
+
+.divider {
+    width:80px;
+    height:4px;
+    background:#c7a44a;
+    margin:20px auto;
+}
+
+.subtitle {
+    color:#64748b;
+}
+
+.grid-box {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.card {
+    padding:25px;
+    border-radius:15px;
+}
+
+.card.light {
+    background:#f1f5f9;
+}
+
+.card.dark {
+    background:#0b1324;
+    color:#fff;
+}
+
+.mini-cta {
+    background:#fff7ed;
+    padding:20px;
+    border-left:5px solid #c7a44a;
+    margin:30px 0;
+    font-weight:600;
+}
+
+.content h2 {
+    margin-top:30px;
+}
+
+.author-box {
+    background:#f1f5f9;
+    padding:20px;
+    border-radius:10px;
+    margin-top:40px;
+}
+
+.cta {
+    text-align:center;
+    background:#0b1324;
+    padding:40px;
+    border-radius:15px;
+    color:#fff;
+}
+
+.btn {
+    display:inline-block;
+    margin:10px;
+    padding:12px 20px;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.btn.gold {
+    background:#c7a44a;
+    color:#000;
+}
+
+.btn.whatsapp {
+    background:#25D366;
+    color:#fff;
+}
+
+/* STICKY */
+.sticky-bar {
+    position:fixed;
+    bottom:0;
+    width:100%;
+    background:#0b1324;
+    padding:10px;
+    text-align:center;
+}
+
+.sticky-bar a {
+    color:#fff;
+    margin:0 15px;
+}
