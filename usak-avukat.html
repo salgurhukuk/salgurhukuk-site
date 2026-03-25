@@ -190,6 +190,36 @@
         color: #fff; 
         transform: scale(1.02); 
     }
+	 /* --- MOBİL UYUMLULUK DÜZENLEMELERİ --- */
+@media (max-width: 768px) {
+    /* 1. Profil Fotoğrafı Kaymasını Engelle */
+    .profile-img-wrapper {
+        max-width: 320px; /* Mobilde biraz küçültelim */
+        box-shadow: 15px 15px 0 var(--navy); /* Gölgeyi küçültelim ki ekrandan taşmasın */
+        margin-bottom: 30px;
+    }
+    
+    .profile-section {
+        padding: 50px 0; /* Mobilde boşlukları daraltalım */
+        text-align: center;
+    }
+
+    /* 2. Sık Sorulan Sorular ve Yorumlar */
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+        overflow-x: hidden; /* Yatay kaymayı kesin olarak engeller */
+    }
+
+    /* 3. Harita ve İframe Düzenlemesi */
+    iframe {
+        height: 300px; /* Mobilde harita çok devasa durmasın */
+    }
+
+    /* 4. Yazı Boyutları */
+    h1 { font-size: 28px !important; }
+    h2 { font-size: 24px !important; }
+} 
 </style>
 </head>
 <body>
