@@ -14,36 +14,59 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "WebPage",
-      "@id": "https://www.salgurhukuk.com/usak-avukat.html",
-      "url": "https://www.salgurhukuk.com/usak-avukat.html",
-      "name": "Avukat M. Eşref Salgür - Uşak Avukatlık ve Danışmanlık Bürosu",
-      "isPartOf": { "@id": "https://www.salgurhukuk.com/#website" },
-      "description": "Uşak Avukat M. Eşref Salgür; Uşak Merkez, Karahallı ve Sivaslı adliyelerinde ceza, boşanma ve miras davalarında uzman avukatlık hizmeti sunar.",
-      "inLanguage": "tr"
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://www.salgurhukuk.com/#website",
-      "url": "https://www.salgurhukuk.com/",
-      "name": "Salgür Hukuk & Danışmanlık",
-      "description": "Uşak Hukuk Bürosu ve Avukatlık Hizmetleri",
-      "inLanguage": "tr"
-    },
-    {
       "@type": "LegalService",
+      "@id": "https://salgurhukuk.com/#legalservice",
       "name": "Salgür Hukuk & Danışmanlık",
+      "image": "https://salgurhukuk.com/images/avukat-esref-salgur.webp",
+      "telePhone": "+90 542 631 00 64",
+      "url": "https://salgurhukuk.com",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Fevzi Çakmak Mah. İlay Sokak, No:4/13",
+        "streetAddress": "Fevzi Çakmak Mah. İlay sok. No:4/13",
         "addressLocality": "Merkez",
         "addressRegion": "Uşak",
-        "postalCode": "64100",
+        "postalCode": "64000",
         "addressCountry": "TR"
       },
-      "telephone": "+905426310064",
-      "priceRange": "$$",
-      "image": "https://www.salgurhukuk.com/images/logo.png"
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 38.6744,
+        "longitude": 29.4059
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "reviewCount": "12",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Uşak Merkez avukat hangi davalara bakar?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Uşak Merkez avukat; boşanma, ceza ve iş hukuku başta olmak üzere hukuki danışmanlık ve dava takibi hizmeti sunar."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Uşak ve ilçelerinde (Sivaslı, Karahallı) adli süreçler nasıl yürütülür?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Uşak Adliyesi merkezli olarak yürütülen süreçlerde, özellikle Karahallı adli işlemleri Sivaslı Adliyesi bünyesinde takip edilmektedir. Ofisimiz tüm bu ilçelerde aktif hizmet vermektedir."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "Person",
+      "name": "M. Eşref Salgür",
+      "jobTitle": "Avukat",
+      "affiliation": { "@id": "https://salgurhukuk.com/#legalservice" }
     }
   ]
 }
