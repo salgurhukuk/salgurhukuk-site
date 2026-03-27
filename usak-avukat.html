@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="tr">
 <head>
@@ -9,6 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+	<link rel="canonical" href="https://salgurhukuk.com/usak-avukat.html" />
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -77,6 +79,7 @@
         --navy: #0a0e14; 
         --text-gray: #4a4a4a; 
         --soft-bg: #fdfdfd;
+		--pelin-gold: #b89551;
     }
 
     body { 
@@ -219,23 +222,34 @@
     /* 4. Yazı Boyutları */
     h1 { font-size: 28px !important; }
     h2 { font-size: 24px !important; }
-} 
+}
+ /* Header */
+header { background:#111; padding:15px 0; border-bottom:1px solid rgba(255,255,255,0.1);}
+header a { text-decoration:none; color:white; }
+header nav a { transition:.3s; }
+header nav a:hover { color:var(--pelin-gold); }
+
 </style>
 </head>
 <body>
 
-<nav class="navbar-top">
-    <div class="container d-flex justify-content-between align-items-center">
-        <a href="index.html" class="text-decoration-none">
-            <span style="color:#fff; font-size:24px; font-weight:700; letter-spacing:3px;">Uşak Avukat | Av. M. Eşref Salgür</span>
-        </a>
-        <div class="d-none d-md-flex">
-            <a href="index.html" class="nav-link-custom">Anasayfa</a>
-            <a href="makaleler.html" class="nav-link-custom">Makaleler</a>
-            <a href="iletisim.html" class="nav-link-custom">İletişim</a>
-        </div>
-    </div>
+<header>
+<div class="container" style="display:flex; justify-content:space-between; align-items:center;">
+<a href="index.html" style="display:flex; align-items:center; gap:15px;">
+<div style="font-size:35px; color:var(--pelin-gold); filter:drop-shadow(0 0 10px rgba(199,164,74,0.3));">⚖️</div>
+<div style="display:flex; flex-direction:column; justify-content:center;">
+<span style="font-family:'Playfair Display',serif; font-size:24px; font-weight:700; color:#fff; line-height:1.1; letter-spacing:2px; text-transform:uppercase;">SALGÜR</span>
+<span style="font-family:'Inter',sans-serif; font-size:13px; font-weight:500; color:var(--pelin-gold); letter-spacing:3px; margin-top:4px; text-transform:uppercase;">HUKUK & DANIŞMANLIK</span>
+</div>
+</a>
+<nav style="display:flex; gap:25px;">
+<a href="index.html">Anasayfa</a>
+<a href="makaleler.html">Makaleler</a>
+<a href="hakkimizda.html">Hakkımızda</a>
+<a href="iletisim.html">İletişim</a>
 </nav>
+</div>
+</header>
 
 <section class="profile-section">
     <div class="container">
@@ -258,12 +272,49 @@
         </div>
     </div>
 </section>
+<main class="content-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-7">
+                <h2 class="gold-title">Uşak Avukatlık Hizmetleri</h2>
+                <p><strong>Uşak avukat</strong> arayışı, sadece bir dava takibi değil, haklarınızın profesyonel bir titizlikle korunması sürecidir. Salgür Hukuk Bürosu olarak, Uşak il merkezi başta olmak üzere, Karahallı ve Sivaslı ilçelerindeki yerel yargı pratiklerine derinlemesine hakimiz.</p>
+                <p>Hukuki sorunlarınızı "önleyici hukuk" prensibiyle, henüz dava aşamasına gelmeden çözmeyi hedefliyor; dava aşamasında ise disiplinli bir dosya takibi ve güncel Yargıtay içtihatları ile hakkınızı savunuyoruz.</p><p>Aydınlatma yükümlülüğünün kaynağı kanun veya dürüstlük kuralıdır. Avukatlık sözleşmesine konu iş ile ilgili sözleşme öncesi veya sözleşme devam ederken, işin yürütülmesi ile ilgili olup, iş sahibinin bilmesinde fayda görülen ve bilinmesi halinde iş sahibinin kararını veya talimatını değiştirebilecek vasıftaki hukuki bilgilerin avukat tarafından iş sahibine aktarılmasıdır. Hukuk büromuz, vekaletini aldığı müvekkillerini dava süreci ve yapılan işin aşamaları hakkında sürekli bir bilgi akışıyla bilgilendirmektedir.</p>
+                
+                <div class="row mt-5">
+                    <div class="col-md-6 mb-4">
+                        <h4 class="h6 fw-bold text-uppercase" style="letter-spacing:1px;"><i class="bi bi-geo-alt text-gold"></i> Yerel Hakimiyet</h4>
+                        <p class="small text-muted">Uşak, Karahallı ve Sivaslı adliyelerindeki usul ve işleyişe tam hakimiyet.</p>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <h4 class="h6 fw-bold text-uppercase" style="letter-spacing:1px;"><i class="bi bi-clock-history text-gold"></i> Disiplinli Takip</h4>
+                        <p class="small text-muted">Dosya süreçlerinde aksamaya yer vermeyen, raporlamaya dayalı çalışma sistemi.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 ps-lg-5">
+                <div style="background:var(--navy); padding:50px; color:#fff; border-top:5px solid var(--gold);">
+                    <h3 class="mb-4">Karşılıklı Güven Esası</h3>
+                    <p class="small opacity-75">  Avukat ile müvekkili arasındaki sözleşme ilişkisinin temeli karşılıklı güvendir. Müvekkil avukatına çekinmeksizin güvenemediği ve önemli tüm vakıalar hakkında bir bakış sunamadığı takdirde avukatın ona gereği gibi danışmanlık yapması ve onu etkili biçimde temsil etmesi zorlaşır.</p>  <p class="small opacity-75">Bundan dolayı Avukatlık Kanunu ile belirlenen gizlilik ve sır saklama ilkesini hassasiyetle uygulamaktadır. Hukuk büromuz, müvekkillerine ait bilgi ve belgeleri mesleki sır kapsamında özel bir şekilde gizli tutmakta, üçüncü kişi veya kurumlarla hiçbir şekilde paylaşmamaktadır.</p>
+  </p>
+                    <hr class="my-4 opacity-25">
+                    <div class="d-flex align-items-center">
+                        <div class="fs-1 me-3 text-gold"><i class="bi bi-telephone-outbound"></i></div>
+                        <div>
+                            <div class="small opacity-50">Telefon Hattımız</div>
+                            <div class="fw-bold fs-5">0542 631 00 64</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
 
 <section class="py-5" style="background: #f8f9fa;">
     <div class="container py-5">
         <div class="row text-center mb-5">
             <h2 class="display-5">Çalışma İlkelerimiz</h2>
-            <p class="text-muted">Salgür Hukuk çatısı altında vazgeçmediğimiz değerler</p>
+            <p class="text-muted">Salgür Hukuk çatısı altında vazgeçmediğimiz değerler; </p>
         </div>
         <div class="row g-4">
             <div class="col-md-4">
@@ -290,7 +341,28 @@
         </div>
     </div>
 </section>
-<!-- ========== 4. ÇALIŞMA USULÜ (EEAT: Şeffaflık Sinyali) ========== -->
+<section class="py-5" style="background-color: #f4f4f4; border-top: 1px solid #ddd;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="mb-4" style="font-family: 'Marcellus', serif; color: #0a0e14;">Uşak ve İlçelerinde Hukuki Süreç Yönetimi</h2>
+                <div style="width: 60px; height: 3px; background: #b89551; margin-bottom: 30px;"></div>
+            </div>
+            
+            <div class="col-md-6">
+                <h5 class="fw-bold text-dark"><i class="bi bi-info-circle-fill text-gold me-2"></i> Uşak Adliyesi ve Yargı Çevresi</h5>
+                <p class="text-muted small" style="line-height: 1.8;">
+                    Uşak il merkezindeki davalar, karmaşık yapısı ve yoğunluğu nedeniyle disiplinli bir dosya takibi gerektirir. <strong>Uşak Avukat</strong> hizmetimiz kapsamında, asliye hukuk, aile ve ceza mahkemelerindeki duruşma takvimlerini titizlikle yönetiyoruz. Müvekkillerimizin Uşak Adliyesi'ndeki dosyalarını, sadece duruşma günlerinde değil, kalem aşamasındaki her gelişmede anlık olarak takip etmekteyiz.
+                </p>
+            </div>
+
+            <div class="col-md-6">
+                <h5 class="fw-bold text-dark"><i class="bi bi-geo-alt-fill text-gold me-2"></i> Karahallı ve Sivaslı Özelinde Yetki Sınırları</h5>
+                <p class="text-muted small" style="line-height: 1.8;">
+                    Bölge halkının en çok yanıldığı konulardan biri yargı yetkisidir. Bilindiği üzere, <strong>Karahallı adli işlemleri Sivaslı Adliyesi</strong> bünyesinde yürütülmektedir. Salgür Hukuk olarak, bu bölgedeki müvekkillerimizin Uşak merkez ile olan hukuki bağlarını ve Sivaslı'daki duruşma süreçlerini yerel dinamiklere uygun şekilde yönetiyoruz. Taşınmaz hukuku ve miras paylaşımları gibi bölgeye özgü uyuşmazlıklarda yerel tecrübemizi konuşturuyoruz.
+                </p>
+            </div>
+			<!-- ========== 4. ÇALIŞMA USULÜ (EEAT: Şeffaflık Sinyali) ========== -->
 <section id="calisma-usulu" class="th-process-section">
   <style>
     .th-process-section{max-width:1200px;margin:50px auto;padding:0 20px;}
@@ -308,7 +380,8 @@
   <div class="th-section-header">
     <span class="th-section-tag">ÇALIŞMA USULÜMÜZ</span>
     <h2 class="th-section-title">Hukuki Süreç Nasıl İşler?</h2>
-    <p class="th-section-sub">Müvekkillerimizle şeffaf ve düzenli bir süreç yürütmekteyiz</p>
+    <p class="th-section-sub">Müvekkillerimizle şeffaf ve düzenli bir süreç yürütmekteyiz. Müvekkil ilişkilerinde <a href="#">güven, gizlilik ve bağlılık</a> prensibi esas alınmaktadır. Dinamik kadrosu ve alanında uzman danışmanları ile Hukuk Büromuz <a href="#">akılcı, şeffaf, çözümcü, profesyonel</a> hizmeti vermeyi misyon edinmiş bir hukuk bürosudur.</p>
+<p>Uşak merkezde yer alan büromuz, geniş bir çerçevede çalışmalarını sürdürmektedir. Takip edilen dava sayısını sınırlı tutularak yüksek disiplin ve özenli çalışma ile uzmanlık gerektiren alanlardaki uyuşmazlıklar çözüme kavuşturulmaktadır.</p>
   </div>
   <div class="th-process-grid">
     <div class="th-process-card">
@@ -336,6 +409,35 @@
     </div>
   </div>
 </section>
+			<div class="section">
+        <div class="content-grid">
+            <div>
+                <h3>Uşak Merkez’de Neden Bizi Seçmelisiniz?</h3>
+                <p>Uşak Adliyesi’ndeki davalarınızda bir adım öne çıkmak için sadece dilekçe yazmak yeterli değildir. Salgür Hukuk olarak sunduğumuz ayrıcalıklar:</p>
+                <ul class="services-list">
+                    <li><i>✓</i> <strong>Bireysel Analiz:</strong> Her müvekkilimizle birebir görüşme sağlayarak, davanın tüm risklerini ve başarı şansını dürüstçe paylaşıyoruz.</li>
+                    <li><i>✓</i> <strong>Yerel Deneyim:</strong> Uşak Merkez mahkemelerinin çalışma usullerini yakından tanıyor, süreçlerin hızlanması için gerekli takibi bizzat yapıyoruz.</li>
+                    <li><i>✓</i> <strong>Ulaşılabilirlik:</strong> Hukuki süreçler kaygı vericidir. Müvekkillerimizi her aşamada bilgilendirerek, akıllarındaki soru işaretlerini gideriyoruz.</li>
+                    <li><i>✓</i> <strong>Geniş Hizmet Ağı:</strong> Sadece merkezde değil; Banaz'dan Çivril'e kadar geniş bir sahada aktif dava takibi yürütüyoruz.</li>
+                </ul>
+            </div>
+            <div style="background: #f8f9fa; padding: 25px; border-radius: 12px; border: 1px solid #eef0f2;">
+                <h4 style="font-family:'Playfair Display',serif; color:#0b1324;">Dava Takibi</h4>
+                <p class="small" style="font-size: 14px; line-height: 1.6;">Uşak Merkez'deki tüm mahkemelerde aktif olarak dosya takibi, delil sunumu ve duruşma katılımı sağlıyoruz.</p>
+                <a href="iletisim.html" style="color:#c7a44a; font-weight: 600; text-decoration: none;">Randevu Al →</a>
+            </div>
+        </div>
+    </div>
+            <div class="col-12 mt-4">
+                <div style="background: #fff; padding: 30px; border-left: 5px solid #b89551; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                    <h5 class="fw-bold">Neden Salgür Hukuk?</h5>
+                    <p class="mb-0 text-muted">Uşak'ta bir davanın seyri, sadece kanun maddelerine değil, yerel mahkeme uygulamalarına olan hakimiyete de bağlıdır. Av. M. Eşref Salgür, teknolojik altyapı (UYAP entegrasyonu) ve şeffaf raporlama sistemiyle, müvekkiline "dosyam ne aşamada?" sorusunu sordurmadan tüm süreci dijital ve fiziksel olarak yönetir.</p> <p> Avukatın yargılama faaliyetindeki rollerinden en önemlisi hukuk normlarının doğru olarak uygulanmasını sağlamak ve yargılama mercilerini bu şekilde yönlendirmektedir. Yargı sistemimizin en büyük sorunlarından birisi yargı mercilerinin iş yükünün çok fazla olması ve buna bağlı olarak da yargılama sürelerinin uzun olmasıdır. Bu nedenle, daha kaliteli bir avukatlık hizmeti verebilmek adına, alanında uzman akademisyenler de birlikte çalışarak hukuki sorunu daha hızlı ve doğru biçimde çözüme kavuşturma gayreti içerisindeyiz.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <section class="py-5 mt-5">
     <div class="container">
         <div class="row text-center mb-5">
@@ -376,69 +478,9 @@
 </div>
 </section>
 
-<section class="py-5" style="background-color: #f4f4f4; border-top: 1px solid #ddd;">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <h2 class="mb-4" style="font-family: 'Marcellus', serif; color: #0a0e14;">Uşak ve İlçelerinde Hukuki Süreç Yönetimi</h2>
-                <div style="width: 60px; height: 3px; background: #b89551; margin-bottom: 30px;"></div>
-            </div>
-            
-            <div class="col-md-6">
-                <h5 class="fw-bold text-dark"><i class="bi bi-info-circle-fill text-gold me-2"></i> Uşak Adliyesi ve Yargı Çevresi</h5>
-                <p class="text-muted small" style="line-height: 1.8;">
-                    Uşak il merkezindeki davalar, karmaşık yapısı ve yoğunluğu nedeniyle disiplinli bir dosya takibi gerektirir. <strong>Uşak Avukat</strong> hizmetimiz kapsamında, asliye hukuk, aile ve ceza mahkemelerindeki duruşma takvimlerini titizlikle yönetiyoruz. Müvekkillerimizin Uşak Adliyesi'ndeki dosyalarını, sadece duruşma günlerinde değil, kalem aşamasındaki her gelişmede anlık olarak takip etmekteyiz.
-                </p>
-            </div>
 
-            <div class="col-md-6">
-                <h5 class="fw-bold text-dark"><i class="bi bi-geo-alt-fill text-gold me-2"></i> Karahallı ve Sivaslı Özelinde Yetki Sınırları</h5>
-                <p class="text-muted small" style="line-height: 1.8;">
-                    Bölge halkının en çok yanıldığı konulardan biri yargı yetkisidir. Bilindiği üzere, <strong>Karahallı adli işlemleri Sivaslı Adliyesi</strong> bünyesinde yürütülmektedir. Salgür Hukuk olarak, bu bölgedeki müvekkillerimizin Uşak merkez ile olan hukuki bağlarını ve Sivaslı'daki duruşma süreçlerini yerel dinamiklere uygun şekilde yönetiyoruz. Taşınmaz hukuku ve miras paylaşımları gibi bölgeye özgü uyuşmazlıklarda yerel tecrübemizi konuşturuyoruz.
-                </p>
-            </div>
-<section class="py-5" style="background-color: #fff;">
-    <div class="container">
-        <div class="row text-center mb-5">
-            <div class="col-12">
-                <h2 style="font-family: 'Marcellus', serif; color: var(--navy);">Müvekkil Deneyimleri</h2>
-                <div class="mx-auto" style="width: 50px; height: 2px; background: var(--gold); margin-top: 10px;"></div>
-            </div>
-        </div>
-        <div class="row g-4">
-            <div class="col-md-4">
-                <div style="padding: 30px; border: 1px solid #eee; height: 100%; position: relative;">
-                    <span style="font-size: 50px; color: #f1f1f1; position: absolute; top: 10px; left: 20px; font-family: serif;">"</span>
-                    <p class="text-muted italic" style="font-style: italic; position: relative; z-index: 1;">Boşanma davam sürecinde her aşamada bilgilendirildim. Sürecin şeffaf ilerlemesi güven vericiydi.</p>
-                    <h6 class="fw-bold mt-3" style="color: var(--gold);">— Aile Hukuku Müvekkili</h6>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div style="padding: 30px; border: 1px solid #eee; height: 100%; position: relative;">
-                    <span style="font-size: 50px; color: #f1f1f1; position: absolute; top: 10px; left: 20px; font-family: serif;">"</span>
-                    <p class="text-muted italic" style="font-style: italic; position: relative; z-index: 1;">Ceza dosyamda soruşturma aşamasından itibaren profesyonel bir savunma yürütüldü. Teşekkürler.</p>
-                    <h6 class="fw-bold mt-3" style="color: var(--gold);">— Ceza Hukuku Müvekkili</h6>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div style="padding: 30px; border: 1px solid #eee; height: 100%; position: relative;">
-                    <span style="font-size: 50px; color: #f1f1f1; position: absolute; top: 10px; left: 20px; font-family: serif;">"</span>
-                    <p class="text-muted italic" style="font-style: italic; position: relative; z-index: 1;">İş hukuku konusundaki haklarımı kısa sürede tahsil etmemi sağladılar. Uşak'ta güvenilir bir adres.</p>
-                    <h6 class="fw-bold mt-3" style="color: var(--gold);">— İş Hukuku Müvekkili</h6>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-            <div class="col-12 mt-4">
-                <div style="background: #fff; padding: 30px; border-left: 5px solid #b89551; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
-                    <h5 class="fw-bold">Neden Salgür Hukuk?</h5>
-                    <p class="mb-0 text-muted">Uşak'ta bir davanın seyri, sadece kanun maddelerine değil, yerel mahkeme uygulamalarına olan hakimiyete de bağlıdır. Av. M. Eşref Salgür, teknolojik altyapı (UYAP entegrasyonu) ve şeffaf raporlama sistemiyle, müvekkiline "dosyam ne aşamada?" sorusunu sordurmadan tüm süreci dijital ve fiziksel olarak yönetir.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+
+ 
 <section class="py-5" style="background-color: #f8f9fa;">
     <div class="container">
         <div class="row mb-5">
@@ -483,6 +525,39 @@
         </div>
     </div>
 </section>
+<section class="py-5" style="background-color: #fff;">
+    <div class="container">
+        <div class="row text-center mb-5">
+            <div class="col-12">
+                <h2 style="font-family: 'Marcellus', serif; color: var(--navy);">Müvekkil Deneyimleri</h2>
+                <div class="mx-auto" style="width: 50px; height: 2px; background: var(--gold); margin-top: 10px;"></div>
+            </div>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div style="padding: 30px; border: 1px solid #eee; height: 100%; position: relative;">
+                    <span style="font-size: 50px; color: #f1f1f1; position: absolute; top: 10px; left: 20px; font-family: serif;">"</span>
+                    <p class="text-muted italic" style="font-style: italic; position: relative; z-index: 1;">Boşanma davam sürecinde her aşamada bilgilendirildim. Sürecin şeffaf ilerlemesi güven vericiydi.</p>
+                    <h6 class="fw-bold mt-3" style="color: var(--gold);">— Aile Hukuku Müvekkili</h6>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div style="padding: 30px; border: 1px solid #eee; height: 100%; position: relative;">
+                    <span style="font-size: 50px; color: #f1f1f1; position: absolute; top: 10px; left: 20px; font-family: serif;">"</span>
+                    <p class="text-muted italic" style="font-style: italic; position: relative; z-index: 1;">Ceza dosyamda soruşturma aşamasından itibaren profesyonel bir savunma yürütüldü. Teşekkürler.</p>
+                    <h6 class="fw-bold mt-3" style="color: var(--gold);">— Ceza Hukuku Müvekkili</h6>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div style="padding: 30px; border: 1px solid #eee; height: 100%; position: relative;">
+                    <span style="font-size: 50px; color: #f1f1f1; position: absolute; top: 10px; left: 20px; font-family: serif;">"</span>
+                    <p class="text-muted italic" style="font-style: italic; position: relative; z-index: 1;">İş hukuku konusundaki haklarımı kısa sürede tahsil etmemi sağladılar. Uşak'ta güvenilir bir adres.</p>
+                    <h6 class="fw-bold mt-3" style="color: var(--gold);">— İş Hukuku Müvekkili</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <a href="https://wa.me/905426310064" class="fixed-whatsapp" target="_blank">
     <i class="bi bi-whatsapp"></i> <span>Avukata Sorun</span>
 </a>
@@ -516,15 +591,7 @@
             </div>
             <div class="col-12">
                 <div style="border: 1px solid #eee; padding: 10px; background: #fff; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3115.1024323705933!2d29.4148023!3d38.6695139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14c87ff64b3836e3%3A0x4a8c22f50a0c127!2zVcWfYWsgQXZ1a2F0IE0uIEXFn3JlZiBTYWxnw7xyIHwgU2FsZ8O8ciBIdWt1ayAmIERhbsSxxZ9tYW5sxLFr!5e0!3m2!1str!2str!4v1774443594055!5m2!1str!2str" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" 
-                        width="100%" 
-                        height="400" 
-                        style="border:0;" 
-                        allowfullscreen="" 
-                        loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
+                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3115.102433598726!2d29.412227374483145!3d38.669513871773646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14c87ff64b3836e3%3A0x4a8c22f50a0c127!2zVcWfYWsgQXZ1a2F0IE0uIEXFn3JlZiBTYWxnw7xyIHwgU2FsZ8O8ciBIdWt1ayAmIERhbsSxxZ9tYW5sxLFr!5e0!3m2!1str!2str!4v1774621350170!5m2!1str!2str" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div class="mt-4 text-center">
                     <p class="text-muted small">
@@ -536,16 +603,69 @@
         </div>
     </div>
 </section>
-<footer class="py-5" style="background:#0a0e14; color:#fff; border-top:4px solid var(--gold);">
-    <div class="container text-center">
-        <p class="small opacity-50 mb-4">Salgür Hukuk & Danışmanlık - Av. M. Eşref Salgür</p>
-        <p class="small">Fevzi Çakmak Mah. İlay Sokak, No:4/13 Merkez / UŞAK</p>
-        <div class="mt-4 small opacity-25" style="font-size: 10px;">
-            Hukuki Uyarı: Sitemizde yer alan tüm içerikler bilgilendirme amaçlı olup, Türkiye Barolar Birliği reklam yasağı yönetmeliğine uygundur.
-        </div>
+<footer>
+    <div class="container" style="text-align:center;">
+
+        <!-- HUKUK BÜROSU KİMLİK -->
+        <p style="font-weight:600; font-size:16px;">
+            Salgür Hukuk & Danışmanlık
+        </p>
+
+        <p style="font-size:14px; line-height:1.8;">
+            Uşak Merkez başta olmak üzere  
+            <a href="sivasli-avukat.html">Sivaslı</a> ve
+            <a href="karahalli-avukat.html">Karahallı</a> ilçelerinde  
+            avukatlık ve hukuki danışmanlık hizmetleri sunulmaktadır.
+        </p>
+
+        <!-- HİZMET ALANLARI -->
+        <p style="margin-top:20px; font-size:14px;">
+            <a href="usak-bosanma-avukati.html">Boşanma Hukuku</a> |
+            <a href="usak-ceza-avukati.html">Ceza Hukuku</a> |
+            <a href="usak-is-hukuku-avukati.html">İş Hukuku</a> |
+            <a href="usak-gayrimenkul-ve-miras-avukati.html">Gayrimenkul ve Miras Hukuku</a>
+        </p>
+
+        <!-- İLÇE BAZLI SEO LİNKLER -->
+        <p style="margin-top:15px; font-size:13px;">
+            <a href="usak-avukat.html">Uşak Avukat</a> ·
+            <a href="sivasli-avukat.html">Sivaslı Avukat</a> ·
+            <a href="karahalli-avukat.html">Karahallı Avukat</a>
+        </p>
+
+        <!-- HUKUKİ UYARI -->
+        <p style="margin-top:25px; font-size:12px; line-height:1.7; opacity:0.85;">
+            Bu internet sitesinde yer alan bilgiler,
+            Türkiye Barolar Birliği reklam yasağına uygun olarak
+            yalnızca bilgilendirme amacıyla sunulmaktadır.
+            Hukuki görüş ve yönlendirme niteliği taşımaz.
+        </p>
+
+        <!-- TELİF -->
+        <p style="margin-top:15px; font-size:12px;">
+            © Salgür Hukuk & Danışmanlık
+        </p>
+
     </div>
 </footer>
-
+<style>
+footer{
+    background:#0b1324;
+    color:#c7a44a;
+    padding:45px 0;
+    margin-top:90px;
+}
+footer a{
+    color:#c7a44a;
+    text-decoration:none;
+    margin:0 10px;
+}
+footer p{
+    margin:10px 0 0 0;
+    font-size:14px;
+    text-align:center;
+}
+</style>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
