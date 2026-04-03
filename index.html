@@ -1,6 +1,7 @@
 
 
 
+
 <!DOCTYPE html>
 <html lang="tr">
 <head>
@@ -12,6 +13,11 @@
   <title>Uşak Avukat M. Eşref Salgür | Salgür Hukuk & Danışmanlık</title>
   <meta name="description" content="Salgür Hukuk & Danışmanlık; Uşak Merkez, Banaz, Çivril, Eşme, Karahallı, Sivaslı ve Ulubey ilçelerinde boşanma, miras, tazminat, ceza ve iş hukuku alanlarında avukatlık hizmeti sunmaktadır.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
   <link rel="canonical" href="https://salgurhukuk.com/">
@@ -139,6 +145,17 @@
 	  /* İlkelerimiz (info-pill) ve Bölgeler (small) için genel uyum */
 .info-pill p { font-size: 17px !important; } 
 .col-sm-6 small { font-size: 16px !important; }
+/* Hizmet Kutuları İçin Yükselme Efekti */
+.service-item {
+    transition: all 0.3s ease; /* Hareketin yumuşak olması için */
+    cursor: pointer;
+}
+
+.service-item:hover {
+    transform: translateY(-10px); /* 10 piksel yukarı yükseltir */
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important; /* Gölgeyi belirginleştirir */
+    border-bottom-color: #0b1324 !important; /* Alt çizgiyi lacivert yapar (isteğe bağlı) */
+}
   </style>
 </head>
 <body>
@@ -218,6 +235,64 @@
             </div>
         </div>
     </section>	
+<section class="services-carousel-section" style="padding: 60px 0; background: #f8fafc;">
+    <div class="container">
+        <div style="text-align: center; margin-bottom: 40px;">
+            <h2 style="font-family: 'Playfair Display', serif; color: #0b1324;">Faaliyet Alanlarımız</h2>
+            <div style="width: 60px; height: 3px; background: #c7a44a; margin: 15px auto;"></div>
+        </div>
+        
+        <div class="owl-carousel service-carousel">
+            <a href="bosanma-avukati-usak.html" style="text-decoration: none; display: block;">
+                <div class="service-item" style="background: #fff; padding: 30px; border-radius: 12px; border-bottom: 4px solid #c7a44a; margin: 10px; box-shadow: 0 10px 20px rgba(0,0,0,0.05); text-align: center; transition: 0.3s;">
+                    <div style="font-size: 40px; margin-bottom: 15px;">👨‍👩‍👧‍👦</div>
+                    <h3 style="font-size: 19px; color: #0b1324; margin-bottom: 10px;">Aile Hukuku</h3>
+                    <p style="color: #666; font-size: 14px;">Boşanma, nafaka, velayet ve mal rejimi davaları.</p>
+                </div>
+            </a>
+
+            <a href="makaleler/miras-hukuku/mirasta-mal-paylasimi-ve-mirascilik.html" style="text-decoration: none; display: block;">
+                <div class="service-item" style="background: #fff; padding: 30px; border-radius: 12px; border-bottom: 4px solid #c7a44a; margin: 10px; box-shadow: 0 10px 20px rgba(0,0,0,0.05); text-align: center;">
+                    <div style="font-size: 40px; margin-bottom: 15px;">📜</div>
+                    <h3 style="font-size: 19px; color: #0b1324; margin-bottom: 10px;">Miras Hukuku</h3>
+                    <p style="color: #666; font-size: 14px;">Mal paylaşımı, ortaklığın giderilmesi ve vasiyetname.</p>
+                </div>
+            </a>
+
+            <a href="hizmetler.html#ceza" style="text-decoration: none; display: block;">
+                <div class="service-item" style="background: #fff; padding: 30px; border-radius: 12px; border-bottom: 4px solid #c7a44a; margin: 10px; box-shadow: 0 10px 20px rgba(0,0,0,0.05); text-align: center;">
+                    <div style="font-size: 40px; margin-bottom: 15px;">⚖️</div>
+                    <h3 style="font-size: 19px; color: #0b1324; margin-bottom: 10px;">Ceza Hukuku</h3>
+                    <p style="color: #666; font-size: 14px;">Ağır ceza, bilişim suçları ve soruşturma aşamaları.</p>
+                </div>
+            </a>
+
+            <a href="hizmetler.html#gayrimenkul" style="text-decoration: none; display: block;">
+                <div class="service-item" style="background: #fff; padding: 30px; border-radius: 12px; border-bottom: 4px solid #c7a44a; margin: 10px; box-shadow: 0 10px 20px rgba(0,0,0,0.05); text-align: center;">
+                    <div style="font-size: 40px; margin-bottom: 15px;">🏠</div>
+                    <h3 style="font-size: 19px; color: #0b1324; margin-bottom: 10px;">Gayrimenkul</h3>
+                    <p style="color: #666; font-size: 14px;">Tapu iptal tescil, müdahalenin men'i ve kira davaları.</p>
+                </div>
+            </a>
+
+            <a href="hizmetler.html#is" style="text-decoration: none; display: block;">
+                <div class="service-item" style="background: #fff; padding: 30px; border-radius: 12px; border-bottom: 4px solid #c7a44a; margin: 10px; box-shadow: 0 10px 20px rgba(0,0,0,0.05); text-align: center;">
+                    <div style="font-size: 40px; margin-bottom: 15px;">💼</div>
+                    <h3 style="font-size: 19px; color: #0b1324; margin-bottom: 10px;">İş Hukuku</h3>
+                    <p style="color: #666; font-size: 14px;">Kıdem ve ihbar tazminatı, işe iade ve alacak davaları.</p>
+                </div>
+            </a>
+
+            <a href="hizmetler.html#tazminat" style="text-decoration: none; display: block;">
+                <div class="service-item" style="background: #fff; padding: 30px; border-radius: 12px; border-bottom: 4px solid #c7a44a; margin: 10px; box-shadow: 0 10px 20px rgba(0,0,0,0.05); text-align: center;">
+                    <div style="font-size: 40px; margin-bottom: 15px;">🚑</div>
+                    <h3 style="font-size: 19px; color: #0b1324; margin-bottom: 10px;">Tazminat Hukuku</h3>
+                    <p style="color: #666; font-size: 14px;">Trafik kazaları, maddi ve manevi tazminat talepleri.</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
     <!-- ========== 5. İLKELER (EEAT: Güven Sinyali) ========== -->
 <section id="ilkeler" class="th-trust-section">
   <style>
@@ -466,5 +541,42 @@ loading="lazy">
         });
     });
 </script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<script>
+$(document).ready(function(){
+  $(".service-carousel").owlCarousel({
+    loop: true,
+    margin: 20,
+    nav: false,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    responsive:{
+        0:{ items:1 },
+        600:{ items:2 },
+        1000:{ items:3 }
+    }
+  });
+});
+</script>
+$(document).ready(function(){
+  $(".service-carousel").owlCarousel({
+    loop: true,
+    margin: 15,
+    autoplay: true,
+    autoplayTimeout: 3500,
+    dots: true, // Alt kısımdaki noktalar aktif olsun mu?
+    responsive:{
+        0:{ items:1 },    // Telefonda 1 kart
+        768:{ items:2 },  // Tablete 2 kart
+        1000:{ items:3 }  // Bilgisayarda 3 kart
+    }
+  });
+});
 </body>
 </html>
